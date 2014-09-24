@@ -29,6 +29,7 @@
 <pre class="prettyprint">
 <error>
 <type>InvalidUsernamePassword</type>
+<p></p>
 <message>Username/password is invalid.</message>
 </error>
 </pre>
