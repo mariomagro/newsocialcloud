@@ -26,12 +26,12 @@
 <h4>
 <a name="Error_Response:"></a>Error Response:<a href="#Error_Response:" class="section_anchor"></a>
 </h4>
-<pre class="prettyprint">&lt;error&gt;
-&lt;type&gt;InvalidUsernamePassword&lt;/type&gt;
-&lt;message&gt;Username/password is invalid.&lt;/message&gt;
-&lt;/error&gt;</pre><pre class="prettyprint">&lt;error&gt;
-&lt;type&gt;PermissionDenied&lt;/type&gt;
-&lt;message&gt;Only an administrator can delete the account.&lt;/message&gt;
-&lt;/error&gt;
+<pre class="prettyprint"><error>
+<type>InvalidUsernamePassword</type>
+<message>Username/password is invalid.</message>
+</error></pre><pre class="prettyprint"><error>
+<type>PermissionDenied</type>
+<message>Only an administrator can delete the account.</message>
+</error>
 </pre>
 </div>
