@@ -1,13 +1,35 @@
-#summary One-sentence summary of this page.
-
-= Introduction =
-
-Add your content here.
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+<div class="vt" id="wikimaincol">
+<p>To cancel a user&#x27;s account, make a POST request. If this is an administrator, this will result in the cancellation of all other users in the account. </p>
+<h4>
+<a name="URL:"></a>URL:<a href="#URL:" class="section_anchor"></a></h4><p><a href="http://sendible.com/api/v2/account_cancellation.json" rel="nofollow">http://sendible.com/api/v2/account_cancellation.json</a></p>
+<h4>
+<a name="HTTP_Methods:"></a>HTTP Methods:<a href="#HTTP_Methods:" class="section_anchor"></a>
+</h4>
+<p>POST </p>
+<h4>
+<a name="Parameters:"></a>Parameters:<a href="#Parameters:" class="section_anchor"></a>
+</h4>
+<ul>
+<li><tt>application_id</tt>: Your application id from <a href="http://sendible.com/developers" rel="nofollow">http://sendible.com/developers</a>. </li>
+<li><tt>reason</tt>: Required. The user&#x27;s reason for cancellation. </li>
+</ul>
+<h4>
+<a name="Authentication:"></a>Authentication:<a href="#Authentication:" class="section_anchor"></a></h4><p>Basic authentication with username and password or remote API key belonging to the Sendible user. </p>
+<h4>
+<a name="Success_Response:"></a>Success Response:<a href="#Success_Response:" class="section_anchor"></a>
+</h4>
+<pre class="prettyprint">{
+   &quot;status&quot;: &quot;OK&quot;
+}</pre>
+<h4>
+<a name="Error_Response:"></a>Error Response:<a href="#Error_Response:" class="section_anchor"></a>
+</h4>
+<pre class="prettyprint">&lt;error&gt;
+&lt;type&gt;InvalidUsernamePassword&lt;/type&gt;
+&lt;message&gt;Username/password is invalid.&lt;/message&gt;
+&lt;/error&gt;</pre><pre class="prettyprint">&lt;error&gt;
+&lt;type&gt;PermissionDenied&lt;/type&gt;
+&lt;message&gt;Only an administrator can delete the account.&lt;/message&gt;
+&lt;/error&gt;
+</pre>
+</div>
