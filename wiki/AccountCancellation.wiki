@@ -1,7 +1,9 @@
 <div class="vt" id="wikimaincol">
-<p>To cancel a user&#x27;s account, make a POST request. If this is an administrator, this will result in the cancellation of all other users in the account. </p>
+<p>To cancel a user's account, make a POST request. If this is an administrator, this will result in the cancellation of all other users in the account. </p>
 <h4>
-<a name="URL:"></a>URL:<a href="#URL:" class="section_anchor"></a></h4><p><a href="http://sendible.com/api/v2/account_cancellation.json" rel="nofollow">http://sendible.com/api/v2/account_cancellation.json</a></p>
+<a name="URL:"></a>URL:<a href="#URL:" class="section_anchor"></a>
+</h4>
+<p><a href="http://login.newsocialcloud.com/api/v2/account_cancellation.json" rel="nofollow">http://login.newsocialcloud.com/api/v2/account_cancellation.json</a></p>
 <h4>
 <a name="HTTP_Methods:"></a>HTTP Methods:<a href="#HTTP_Methods:" class="section_anchor"></a>
 </h4>
@@ -10,11 +12,11 @@
 <a name="Parameters:"></a>Parameters:<a href="#Parameters:" class="section_anchor"></a>
 </h4>
 <ul>
-<li><tt>application_id</tt>: Your application id from <a href="http://sendible.com/developers" rel="nofollow">http://sendible.com/developers</a>. </li>
-<li><tt>reason</tt>: Required. The user&#x27;s reason for cancellation. </li>
+<li><tt>application_id</tt>: Your application id from <a href="http://newsocialcloud.com/developers" rel="nofollow">http://newsocialcloud.com/developers</a>. </li>
+<li><tt>reason</tt>: Required. The user's reason for cancellation. </li>
 </ul>
 <h4>
-<a name="Authentication:"></a>Authentication:<a href="#Authentication:" class="section_anchor"></a></h4><p>Basic authentication with username and password or remote API key belonging to the Sendible user. </p>
+<a name="Authentication:"></a>Authentication:<a href="#Authentication:" class="section_anchor"></a></h4><p>Basic authentication with username and password or remote API key belonging to the NewSocialCloud user. </p>
 <h4>
 <a name="Success_Response:"></a>Success Response:<a href="#Success_Response:" class="section_anchor"></a>
 </h4>
