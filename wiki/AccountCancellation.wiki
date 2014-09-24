@@ -21,7 +21,7 @@
 <a name="Success_Response:"></a>Success Response:<a href="#Success_Response:" class="section_anchor"></a>
 </h4>
 <pre class="prettyprint">{
-   &quot;status&quot;: &quot;OK&quot;
+   "status": "OK";
 }</pre>
 <h4>
 <a name="Error_Response:"></a>Error Response:<a href="#Error_Response:" class="section_anchor"></a>
