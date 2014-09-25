@@ -1,6 +1,6 @@
 To specify all permissions for a permission profile, make a POST call using basic authentication.
 
-URL:
+* URL: *
 
 http://sendible.com/api/v2/permissions.json
 
