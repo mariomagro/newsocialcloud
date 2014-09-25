@@ -1,13 +1,36 @@
-#summary One-sentence summary of this page.
+To specify all permissions for a permission profile, make a POST call using basic authentication.
 
-= Introduction =
+URL:
+http://sendible.com/api/v2/permissions.json
 
-Add your content here.
+HTTP Methods:
+POST
 
+Parameters:
+application_id: Your application id from http://sendible.com/developers.
+profile_id: The ID of the profile to retrieve.
+permissions: A comma separated list of permission IDs. This list can be retrieved using the available_permissions API call.
+Authentication:
+Basic authentication with username and password or remote API key belonging to the Sendible user.
 
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+Success Response:
+{
+    "profile_name": "Default",
+    "id": 2,
+    "permissions": [
+        {
+            "permission_category": {
+                "category_name": "Engage",
+                "id": 1,
+                "sorting": 1
+            },
+            "permission_description": "The user can compose new messages.",
+            "id": 2,
+            "permission_name": "Compose Messages",
+            "permission_code": "messages.create"
+        }
+    ]
+}
+Error Responses:
+{"error": {"type": "MissingParameter", "message": "The profile_id parameter is missing."} }
+{"error": {"type": "MissingParameter", "message": "The permissions parameter is missing."} }
