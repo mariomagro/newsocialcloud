@@ -2,7 +2,7 @@ To specify all permissions for a permission profile, make a POST call using basi
 
 * URL: *
 
-http://sendible.com/api/v2/permissions.json
+http://login.newsocialcloud.com/api/v2/permissions.json
 
 
 * HTTP Methods: *
@@ -11,13 +11,13 @@ POST
 
 * Parameters: *
 
-application_id: Your application id from http://sendible.com/developers.
+application_id: Your Application ID from http://newsocialcloud.com/developers.
 profile_id: The ID of the profile to retrieve.
 permissions: A comma separated list of permission IDs. This list can be retrieved using the available_permissions API call.
 
 * Authentication: *
 
-Basic authentication with username and password or remote API key belonging to the Sendible user.
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
 
 * Success Response: *
 
