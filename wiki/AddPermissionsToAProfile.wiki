@@ -4,6 +4,7 @@ To specify all permissions for a permission profile, make a POST call using basi
 
 http://sendible.com/api/v2/permissions.json
 
+
 * HTTP Methods: *
 
 POST
@@ -18,7 +19,8 @@ permissions: A comma separated list of permission IDs. This list can be retrieve
 
 Basic authentication with username and password or remote API key belonging to the Sendible user.
 
-Success Response:
+* Success Response: *
+
 {
     "profile_name": "Default",
     "id": 2,
@@ -37,7 +39,7 @@ Success Response:
     ]
 }
 
-Error Responses:
+* Error Responses: *
 
 {"error": {"type": "MissingParameter", "message": "The profile_id parameter is missing."} }
 {"error": {"type": "MissingParameter", "message": "The permissions parameter is missing."} }
