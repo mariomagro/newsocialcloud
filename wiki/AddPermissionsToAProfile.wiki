@@ -4,16 +4,18 @@ To specify all permissions for a permission profile, make a POST call using basi
 
 http://sendible.com/api/v2/permissions.json
 
-HTTP Methods:
+* HTTP Methods: *
 
 POST
 
-Parameters:
+* Parameters: *
 
 application_id: Your application id from http://sendible.com/developers.
 profile_id: The ID of the profile to retrieve.
 permissions: A comma separated list of permission IDs. This list can be retrieved using the available_permissions API call.
-Authentication:
+
+* Authentication: *
+
 Basic authentication with username and password or remote API key belonging to the Sendible user.
 
 Success Response:
