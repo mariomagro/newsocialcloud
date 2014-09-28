@@ -1,13 +1,71 @@
-#summary One-sentence summary of this page.
+To retrieve a the profile for an authenticated user, make a GET call using an access_token.
 
-= Introduction =
+URL:
 
-Add your content here.
+http://login.newsocialcloud.com/api/v2/profile.json
 
+HTTP Methods:
 
-= Details =
+GET
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+Parameters:
+
+application_id: Your application id from http://newsocialcloud.com/developers.
+timezone: Optional. Pass the timezoneOffsetClient value from the browser. This will be used to determine if the user's browser timezone differs from that in their profile preferences.
+
+Authentication:
+
+Use the access_token that's retrieved after a call to http://login.newsocialcloud.com/api/v2/auth.
+
+Success Response:
+
+{
+    "permission_profile": {
+        "profile_name": "Default",
+        "id": 2,
+        "permissions": [
+            {
+                "permission_id": "1",
+                "permission_description": "The user can compose new messages.",
+                "permission_name": "Compose Messages",
+                "permission_code": "messages.create",
+                "permission_category": {
+                    "category_name": "Engage",
+                    "id": 1,
+                    "sorting": 1
+                }
+            }
+        ]
+    },
+    "approval_from": [],
+    "profile": "Administrator",
+    "is_active": true,
+    "lineage": "1234",
+    "children_count": 4,
+    "last_login": "2014/09/08 09:05:41 +0000",
+    "user_status": "Active (Premium)",
+    "language": "en",
+    "fullname": "John Smith",
+    "api_key": "xxxxxxxxxxxxxx",
+    "timezone": -60,
+    "id": 1234,
+    "color": "#b6617c",
+    "user_properties": [
+        {
+            "created_at": "2013/02/26 00:00:00 +0000",
+            "updated_at": "2013/02/26 18:18:42 +0000",
+            "propertyName": "google_fonts",
+            "id": 422,
+            "user_id": 5131,
+            "propertyValue": "{\"items\":[]}"
+        }
+    ],
+    "timezone_name": "Europe - Madrid",
+    "mobile": "",
+    "parent_user_id": null,
+    "login": "newsocialcloud",
+    "company_address": "",
+    "avatar": "https://snd-store.s3.amazonaws.com/0/NewSocialCloud/NewSocialCloud270x90.png",
+    "email": "info@xxxx.xxxx",
+    "clock_format": 12
+}
