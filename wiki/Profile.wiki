@@ -1,23 +1,23 @@
 To retrieve a the profile for an authenticated user, make a GET call using an access_token.
 
-URL:
+* URL: *
 
 http://login.newsocialcloud.com/api/v2/profile.json
 
-HTTP Methods:
+* HTTP Methods: *
 
 GET
 
-Parameters:
+* Parameters: *
 
 application_id: Your application id from http://newsocialcloud.com/developers.
 timezone: Optional. Pass the timezoneOffsetClient value from the browser. This will be used to determine if the user's browser timezone differs from that in their profile preferences.
 
-Authentication:
+* Authentication: *
 
 Use the access_token that's retrieved after a call to http://login.newsocialcloud.com/api/v2/auth.
 
-Success Response:
+* Success Response: *
 
 {
     "permission_profile": {
@@ -65,7 +65,7 @@ Success Response:
     "parent_user_id": null,
     "login": "newsocialcloud",
     "company_address": "",
-    "avatar": "https://snd-store.s3.amazonaws.com/0/NewSocialCloud/NewSocialCloud270x90.png",
+    "avatar": "https://snd-store.s3.amazonaws.com/0/NewSocialCloud/NewSocialCloud.png",
     "email": "info@xxxx.xxxx",
     "clock_format": 12
 }
