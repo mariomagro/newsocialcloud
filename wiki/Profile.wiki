@@ -65,7 +65,7 @@ Use the access_token that's retrieved after a call to http://login.newsocialclou
     "parent_user_id": null,
     "login": "newsocialcloud",
     "company_address": "",
-    "avatar": "https://snd-store.s3.amazonaws.com/0/NewSocialCloud/NewSocialCloud.png",
+    "avatar": "https://snd-store.s3.amazonaws.com/0/NewSocialCloud/file_name.png",
     "email": "info@xxxx.xxxx",
     "clock_format": 12
 }
