@@ -28,7 +28,9 @@ Basic authentication with username and password or remote API key belonging to t
   <status>success</status>
 </result>
 
+
 * Error Response: *
+
 
 <error>
 <type>InvalidUsernamePassword</type>
