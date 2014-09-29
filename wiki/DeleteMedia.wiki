@@ -1,13 +1,25 @@
-#summary One-sentence summary of this page.
+To delete a media file for a given user, make a DELETE call using basic authentication.
 
-= Introduction =
+* URL: *
 
-Add your content here.
+http://login.newsocialcloud.com/api/v2/media.json
 
+* HTTP Methods: *
 
-= Details =
+DELETE
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+* Parameters: *
+
+application_id: Your application id from http://newsocialcloud.com/developers.
+
+file_id: The id of the file to be deleted.
+
+* Authentication: *
+
+Basic authentication with username and password or remote API key belonging to the newsocialcloud user.
+
+* Success Response: *
+
+{
+   "status": "OK"
+}
