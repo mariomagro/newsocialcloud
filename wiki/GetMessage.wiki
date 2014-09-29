@@ -27,7 +27,7 @@
 <h4>
 <a name="Success_Response:"></a>Success Response:<a href="#Success_Response:" class="section_anchor"></a>
 </h4>
-<pre class="prettyprint"><?xml version="1.0" encoding="UTF-8"?>
+<msg>
   <status>Sent</status>
   <subject></subject>
   <tags nil="true"></tags>
@@ -64,7 +64,7 @@
       <file_url>http://newsocialcloud.com/imagenes/n1727389556_1512.jppg</file_url> 
     </photo> 
   </photos> 
-</pre>
+</msg>
 <h4>
 <a name="Error_Response:"></a>Error Response:<a href="#Error_Response:" class="section_anchor"></a>
 </h4>
