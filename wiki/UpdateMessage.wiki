@@ -79,11 +79,12 @@ Basic authentication with username and password or remote API key belonging to t
 <body>
 <p>test to FF.</p>
 </body>
-</html></message-rich-text>
+</html>
+</message-rich-text>
   <notify-me type="integer">0</notify-me>
   <send-date-gmt type="datetime">2012-02-24T10:26:55Z</send-date-gmt>
   <send-date-client type="datetime">2012-02-24T12:26:55Z</send-date-client>
-  <send-to>"Friendfeed - hamgav" <5453></send-to>
+  <send-to>"Friendfeed - hamgav"</send-to>
   <timezone-offset-client type="integer">-120</timezone-offset-client>
   <photos type="array"> 
     <photo> 
@@ -96,9 +97,7 @@ Basic authentication with username and password or remote API key belonging to t
       <name>n1727389556_1512.jpg</name> 
       <file_url>http://newsocialcloud.com/imagenes/n1727389556_1512.jppg</file_url> 
     </photo> 
-  </photos> 
-</msg>
-
+  </photos>
 
 * Error Responses: *
 
