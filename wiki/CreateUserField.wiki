@@ -28,6 +28,3 @@
 </error></pre>
  </div>
  </div>
- </td><tr>
-</table>
- </div>
