@@ -15,18 +15,33 @@ POST
 * Parameters: *
 
 application_id: Your application id from http://newsocialcloud.com/developers.
+
 send_to: A comma separated list of recipient_id's retrieved using the Services call, email addresses and/or mobile numbers for SMS.
+
 message_text: The plain text version of the message.
+
 subject: Optional. The message subject.
+
 message_rich_text: Optional. Marked-up version of the message. Accepts HTML.
+
 send_date_client: Optional. The date and time to send the message. Format: yyyy-MM-dd HH:mm e.g. 2012-02-24 23:59:40
+
 notify_me: Optional. Whether to send an email notification when the message has been delivered. Accepts 1 or 0.
+
 status: Optional. The message status. Accepts "Pending" or "Draft".
+
 timezone_offset_client: Optional. The number of minutes required to convert the client's time zone to GMT. e.g. -120
+
 recurs: Optional. How frequently this message should be posted. [xx][H = Hours, D = Days, W = Weeks, M = Months, Y = Years] e.g. 01H = Every hour or 05D = Every 5 days.
+
 recurs_until_client: Optional. The date at which the recurring message should stop. e.g. 2012-02-24 23:59:40
+
 tags: Optional. A comma separated list of tag keywords. Used to categorize blog posts.
-media: Optional. A comma separated list of files or images to attach to the message. Each item in the list must contain the file name with extension and a URL-encoded base64 string representing the data. Format: file_name_1|base64string_1,file_name_2|base64string_2. e.g. logo1w.png|iVBORw0KGgoAAAANSUhEUgAAARMAAABfCAMAAAD8mtMpAAADAFBMVEUAcwsOcRojZitLflOWBR...
+
+media: Optional. A comma separated list of files or images to attach to the message. Each item in the list must contain the file name with extension and a URL-encoded base64 string representing the data. 
+
+Format: file_name_1|base64string_1,file_name_2|base64string_2. e.g. logo1w.png|iVBORw0KGgoAAAANSUhEUgAAARMAAABfCAMAAAD8mtMpAAADAFBMVEUAcwsOcRojZitLflOWBR...
+
 queue_id: Optional. If the message needs to be added to a SmartQueue include the queue_id parameter. Also, set the status to Queued
 
 * Authentication: *
@@ -64,12 +79,12 @@ Basic authentication with username and password or remote API key belonging to t
     <photo> 
       <id type="integer">484</id> 
       <name>logo1w.png</name> 
-      <file_url>http://newsocialcloud.com/imagenes/logo1w.png</file_url> 
+      <file_url>http://newsocialcloud.com/imagenes/logo1w.pnng</file_url> 
     </photo> 
     <photo> 
       <id type="integer">485</id> 
       <name>n1727389556_1512.jpg</name> 
-      <file_url>http://newsocialcloud.com/imagenes/n1727389556_1512.jpg</file_url> 
+      <file_url>http://newsocialcloud.com/imagenes/n1727389556_1512.jppg</file_url> 
     </photo> 
   </photos> 
 </msg>
