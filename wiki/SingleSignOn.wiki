@@ -1,13 +1,25 @@
-#summary One-sentence summary of this page.
+Log the user in to their NewSocialCloud account and direct to the default page or a page you specify.
 
-= Introduction =
+* URL: *
 
-Add your content here.
+http://login.newsocialcloud.com/api/v1/single-sign-on
 
+* HTTP Methods: *
 
-= Details =
+GET
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+* Authentication: *
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+* Parameters: *
+
+application_id: Your application id from http://newsocialcloud.com/developers.
+redirect_to: Optional. The URL to direct users to after signing in. If you leave this out, the user will be redirected to the NewSocialCloud or White Label homepage.
+
+* Error Response: *
+
+<error>
+<type>InvalidUsernamePassword</type>
+<message>Username/password is invalid.</message>
+</error>
