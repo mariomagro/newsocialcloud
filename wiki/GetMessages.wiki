@@ -1,10 +1,10 @@
 <div id="wikicontent">
 <div class="vt" id="wikimaincol">
-<p>To retrieve a list of the user's Pending/Sent/Draft Sendible messages, make a GET call using basic authentication. </p>
+<p>To retrieve a list of the user's Pending/Sent/Draft NewSocialCloud messages, make a GET call using basic authentication. </p>
 <h4>
 <a name="URL:"></a>URL:<a href="#URL:" class="section_anchor"></a>
 </h4>
-<p><a href="http://sendible.com/api/v1/messages.format" rel="nofollow">http://sendible.com/api/v1/messages.format</a> </p>
+<p><a href="http://login.newsocialcloud.com/api/v1/messages.format" rel="nofollow">http://login.newsocialcloud.com/api/v1/messages.format</a> </p>
 <h4>
 <a name="Formats:"></a>Formats:<a href="#Formats:" class="section_anchor"></a>
 </h4>
@@ -17,7 +17,7 @@
 <a name="Parameters:"></a>Parameters:<a href="#Parameters:" class="section_anchor"></a>
 </h4>
 <ul>
-<li><tt>application_id</tt>: Your application id from <a href="http://sendible.com/developers" rel="nofollow">http://sendible.com/developers</a>. </li>
+<li><tt>application_id</tt>: Your application id from <a href="http://newsocialcloud.com/developers" rel="nofollow">http://newsocialcloud.com/developers</a>. </li>
 <li><tt>status</tt>: Optional. The message status. Default is <tt>Pending</tt>. Possible values are <tt>Pending</tt>, <tt>Draft</tt> or <tt>Sent</tt>. </li>
 <li><tt>filter</tt>: Optional. Filter messages by keyword.  </li>
 <li><tt>per_page</tt>: Optional. The number of messages to return per page. </li>
@@ -29,7 +29,7 @@
 <h4>
 <a name="Authentication:"></a>Authentication:<a href="#Authentication:" class="section_anchor"></a>
 </h4>
-<p>Basic authentication with username and password or remote API key belonging to the Sendible user. </p>
+<p>Basic authentication with username and password or remote API key belonging to the NewSocialCloud user. </p>
 <h4>
 <a name="Success_Response:"></a>Success Response:<a href="#Success_Response:" class="section_anchor"></a>
 </h4>
@@ -60,7 +60,7 @@
       <photo> 
         <id type="integer">485</id> 
         <name>n1727389556_1512.jpg</name> 
-        <file-url>http://sendible.s3.amazonaws.com/_files/485/n1727389556_1512.jpg</file-url> 
+        <file-url>http://newsocialcloud.s3.amazonaws.com/_files/485/n1727389556_1512.jpg</file-url> 
       </photo> 
     </photos> 
   </msg> 
@@ -84,12 +84,12 @@
       <photo> 
         <id type="integer">480</id> 
         <name>logo1w.png</name> 
-        <file-url>http://sendible.s3.amazonaws.com/_files/480/logo1w.png</file-url> 
+        <file-url>http://newsocialcloud.s3.amazonaws.com/_files/480/logo1w.png</file-url> 
       </photo> 
       <photo> 
         <id type="integer">481</id> 
         <name>n1727389556_1512.jpg</name> 
-        <file-url>http://sendible.s3.amazonaws.com/_files/481/n1727389556_1512.jpg</file-url> 
+        <file-url>http://newsocialcloud.s3.amazonaws.com/_files/481/n1727389556_1512.jpg</file-url> 
       </photo> 
     </photos> 
   </msg> 
