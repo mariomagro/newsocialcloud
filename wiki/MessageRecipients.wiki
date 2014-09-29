@@ -1,431 +1,54 @@
+To retrieve a list of message recipients for a given NewSocialCloud message, make a GET call using basic authentication with the user's NewSocialCloud username and password
 
- 
- 
- <!DOCTYPE html>
-<html>
-<head>
- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
- 
- <meta name="ROBOTS" content="NOARCHIVE">
- 
- <link rel="icon" type="image/vnd.microsoft.icon" href="https://ssl.gstatic.com/codesite/ph/images/phosting.ico">
- 
- 
- <link rel="canonical" href="https://code.google.com/p/sendible-api/wiki/MessageRecipients" />
- 
- <script type="text/javascript">
- 
- 
- 
- 
- var codesite_token = "ABZ6GAfn61N79Skl7FB-mw5TdkY6OZ9GVw:1412002953996";
- 
- 
- var CS_env = {"assetVersionPath": "https://ssl.gstatic.com/codesite/ph/16315335801608708296", "relativeBaseUrl": "", "assetHostPath": "https://ssl.gstatic.com/codesite/ph", "projectHomeUrl": "/p/sendible-api", "token": "ABZ6GAfn61N79Skl7FB-mw5TdkY6OZ9GVw:1412002953996", "loggedInUserEmail": "mario.magro@newsocialcloud.com", "domainName": null, "profileUrl": "/u/111392853062015549040/", "projectName": "sendible-api"};
- var _gaq = _gaq || [];
- _gaq.push(
- ['siteTracker._setAccount', 'UA-18071-1'],
- ['siteTracker._trackPageview']);
- 
- (function() {
- var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
- ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
- (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
- })();
- 
- </script>
- 
- 
- <title>MessageRecipients - 
- sendible-api -
- 
- 
- The Sendible API enables developers to interact with the Sendible web site programmatically via simple HTTP requests. - Google Project Hosting
- </title>
- <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/16315335801608708296/css/core.css">
- 
- <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/16315335801608708296/css/ph_detail.css" >
- 
- 
- 
- <link type="application/atom+xml" rel="alternate" href="/feeds/p/sendible-api/svnchanges/basic?path=/wiki/MessageRecipients.wiki">
- 
- 
-<!--[if IE]>
- <link type="text/css" rel="stylesheet" href="https://ssl.gstatic.com/codesite/ph/16315335801608708296/css/d_ie.css" >
-<![endif]-->
- <style type="text/css">
- .menuIcon.off { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
- .menuIcon.on { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
- .menuIcon.down { background: no-repeat url(https://ssl.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
- 
- 
- #maincol {
- padding-top: 0;
- padding-bottom: 0;
- }
+* URL: *
 
- 
- </style>
-</head>
-<body class="t6">
-<script type="text/javascript">
- window.___gcfg = {lang: 'en'};
- (function() 
- {var po = document.createElement("script");
- po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
- var s = document.getElementsByTagName("script")[0];
- s.parentNode.insertBefore(po, s);
- })();
-</script>
-<div class="headbg">
+http://login.newsocialcloud.com/api/v1/message-recipients.format?type=type
 
- <div id="gaia">
- 
+* Formats: *
 
- <span>
- 
- 
- 
- <b>mario.magro@newsocialcloud.com</b>
- 
- 
- | <a href="/u/111392853062015549040/" id="projects-dropdown" onclick="return false;"
- ><u>My favorites</u> <small>&#9660;</small></a>
- | <a href="/u/111392853062015549040/" onclick="_CS_click('/gb/ph/profile');"
- title="Profile, Updates, and Settings"
- ><u>Profile</u></a>
- | <a href="https://www.google.com/accounts/Logout?continue=https%3A%2F%2Fcode.google.com%2Fp%2Fsendible-api%2Fwiki%2FMessageRecipients" 
- onclick="_CS_click('/gb/ph/signout');"
- ><u>Sign out</u></a>
- 
- </span>
+Replace format with either xml or json
 
- </div>
+* HTTP Methods: *
 
- <div class="gbh" style="left: 0pt;"></div>
- <div class="gbh" style="right: 0pt;"></div>
- 
- 
- <div style="height: 1px"></div>
-<!--[if lte IE 7]>
-<div style="text-align:center;">
-Your version of Internet Explorer is not supported. Try a browser that
-contributes to open source, such as <a href="http://www.firefox.com">Firefox</a>,
-<a href="http://www.google.com/chrome">Google Chrome</a>, or
-<a href="http://code.google.com/chrome/chromeframe/">Google Chrome Frame</a>.
-</div>
-<![endif]-->
+GET
 
+* Parameters: *
 
+application_id: Your application id from http://newsocialcloud.com/developers.
+message_id: The message id.
 
- <table style="padding:0px; margin: 0px 0px 10px 0px; width:100%" cellpadding="0" cellspacing="0"
- itemscope itemtype="http://schema.org/CreativeWork">
- <tr style="height: 58px;">
- 
- 
- 
- <td id="plogo">
- <link itemprop="url" href="/p/sendible-api">
- <a href="/p/sendible-api/">
- 
- 
- <img src="/p/sendible-api/logo?cct=1357213736"
- alt="Logo" itemprop="image">
- 
- </a>
- </td>
- 
- <td style="padding-left: 0.5em">
- 
- <div id="pname">
- <a href="/p/sendible-api/"><span itemprop="name">sendible-api</span></a>
- </div>
- 
- <div id="psum">
- <a id="project_summary_link"
- href="/p/sendible-api/"><span itemprop="description">The Sendible API enables developers to interact with the Sendible web site programmatically via simple HTTP requests.</span></a>
- 
- </div>
- 
- 
- </td>
- <td style="white-space:nowrap;text-align:right; vertical-align:bottom;">
- 
- <form action="/hosting/search">
- <input size="30" name="q" value="" type="text">
- 
- <input type="submit" name="projectsearch" value="Search projects" >
- </form>
- 
- </tr>
- </table>
+* Authentication: *
 
-</div>
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
 
- 
-<div id="mt" class="gtb"> 
- <a href="/p/sendible-api/" class="tab ">Project&nbsp;Home</a>
- 
- 
- 
- 
- 
- 
- <a href="/p/sendible-api/w/list" class="tab active">Wiki</a>
- 
- 
- 
- 
- 
- <a href="/p/sendible-api/issues/list"
- class="tab ">Issues</a>
- 
- 
- 
- 
- 
- <a href="/p/sendible-api/source/checkout"
- class="tab ">Source</a>
- 
- 
- 
- 
- 
- 
- 
- 
- <div class=gtbc></div>
-</div>
-<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
- <tr>
- 
- 
- 
- <td class="subt">
- <div class="issueDetail">
-<div class="isf">
- 
- <span class="inIssueList"> 
- <span>Search</span>
- <form action="/p/sendible-api/w/list" method="GET" style="display:inline">
- <select id="can" name="can" >
- <option disabled="disabled">Search within:</option>
- 
- <option value="1" >&nbsp;All wiki pages</option>
- <option value="3" >&nbsp;Featured pages</option>
- <option value="2" selected="selected">&nbsp;Current pages</option>
- 
- 
- <option value="5" >&nbsp;My starred pages</option>
- 
- <option value="4" >&nbsp;Deprecated pages</option>
- 
- </select>
- <span>for</span>
- <span id="qq"><input type="text" size="38" id="searchq" name="q" value=""
- autocomplete="off" ></span>
- 
- 
- 
- <input type="submit" value="Search" >
- </form>
- </span>
+* Success Response: *
 
- 
- 
- 
- 
- 
- 
- 
+<?xml version="1.0" encoding="UTF-8"?>
+<user-services type="array">
+  <user-service>
+    <account-name>Twitter - oauth - NewSocialCloud</account-name>
+    <account-type>Twitteroauth</account-type>
+    <icon-url>http://www.google.com/s2/favicons?domain=twitter.com</icon-url>
+    <recipient-id>6300</recipient-id>
+  </user-service>
+  <user-service>
+    <account-name>Ping.fm - info@newsocialcloud.com</account-name>
+    <account-type>Pingfm</account-type>
+    <icon-url>http://www.google.com/s2/favicons?domain=ping.fm</icon-url>
+    <recipient-id>6307</recipient-id>
+  </user-service>
+</user-services>
 
-</div>
-</div>
+* Error Response: *
 
- </td>
- 
- 
- 
- 
- 
- 
- <td align="right" valign="top" class="bevel-right"></td>
- </tr>
-</table>
+<error>
+<type>InvalidUsernamePassword</type>
+<message>Username/password is invalid.</message>
+</error>
 
+OR
 
-<script type="text/javascript">
- var cancelBubble = false;
- function _go(url) { document.location = url; }
-</script>
-<div id="maincol"
- 
->
-
- 
-
-
-
-
-
-
-
- <style type="text/css">
- .delcom { background: #e8e8e8 }
- .commentcontent {
- margin: 2em;
- padding: 0px 10px;
- width: 66em;
- }
- .artifactcomment {
- border-top: 3px solid #c3d9ff;
- }
- #commentform {
- border-top: 3px solid #c3d9ff;
- }
- </style>
-
-<div id="wikipage">
-<table>
- <tr>
- 
- 
- <td style="vertical-align:top; padding-left:5px">
- 
- <div id="wikiheader">
- 
- <img width="15" height="15" id="star_img"
- src="https://ssl.gstatic.com/codesite/ph/images/star_off.gif"
- style="cursor:pointer"
- onclick="_CS_toggleStar(this,
- {'scope': 'wiki',
- 'user': '_CURRENT_USER',
- 'item': 'sendible-api:MessageRecipients'
- });"/>
- 
- <span style="font-size:120%;font-weight:bold">MessageRecipients</span>
- &nbsp;
- <div> 
- 
- 
- 
- <div id="wikiauthor" style="float:right">
- Updated <span title="Thu Jun 16 04:40:46 2011">
- Jun 16, 2011</span>
- 
- by 
-
- <a class="userlink"
- href="/u/100313999973413991802/">gavinham...@gmail.com</a
->
- 
- </div>
- </div>
- </div>
- 
- <div id="wikicontent">
- <div class="vt" id="wikimaincol">
- <p>To retrieve a list of message recipients for a given Sendible message, make a GET call using basic authentication with the user&#x27;s Sendible username and password </p><h4><a name="URL:"></a>URL:<a href="#URL:" class="section_anchor"></a></h4><p><a href="http://sendible.com/api/v1/message-recipients.format?type=type" rel="nofollow">http://sendible.com/api/v1/message-recipients.format?type=type</a> </p><h4><a name="Formats:"></a>Formats:<a href="#Formats:" class="section_anchor"></a></h4><p>Replace <tt>format</tt> with either <tt>xml</tt> or <tt>json</tt> </p><h4><a name="HTTP_Methods:"></a>HTTP Methods:<a href="#HTTP_Methods:" class="section_anchor"></a></h4><p>GET </p><h4><a name="Parameters:"></a>Parameters:<a href="#Parameters:" class="section_anchor"></a></h4><ul><li><tt>application_id</tt>: Your application id from <a href="http://sendible.com/developers" rel="nofollow">http://sendible.com/developers</a>. </li><li><tt>message_id</tt>: The message id. </li></ul><h4><a name="Authentication:"></a>Authentication:<a href="#Authentication:" class="section_anchor"></a></h4><p>Basic authentication with username and password or remote API key belonging to the Sendible user. </p><h4><a name="Success_Response:"></a>Success Response:<a href="#Success_Response:" class="section_anchor"></a></h4><pre class="prettyprint">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;user-services type=&quot;array&quot;&gt;
-  &lt;user-service&gt;
-    &lt;account-name&gt;Twitter - oauth - sendible&lt;/account-name&gt;
-    &lt;account-type&gt;Twitteroauth&lt;/account-type&gt;
-    &lt;icon-url&gt;http://www.google.com/s2/favicons?domain=twitter.com&lt;/icon-url&gt;
-    &lt;recipient-id&gt;6300&lt;/recipient-id&gt;
-  &lt;/user-service&gt;
-  &lt;user-service&gt;
-    &lt;account-name&gt;Ping.fm - info@sendible.com&lt;/account-name&gt;
-    &lt;account-type&gt;Pingfm&lt;/account-type&gt;
-    &lt;icon-url&gt;http://www.google.com/s2/favicons?domain=ping.fm&lt;/icon-url&gt;
-    &lt;recipient-id&gt;6307&lt;/recipient-id&gt;
-  &lt;/user-service&gt;
-&lt;/user-services&gt;</pre><h4><a name="Error_Response:"></a>Error Response:<a href="#Error_Response:" class="section_anchor"></a></h4><pre class="prettyprint">&lt;error&gt;
-&lt;type&gt;InvalidUsernamePassword&lt;/type&gt;
-&lt;message&gt;Username/password is invalid.&lt;/message&gt;
-&lt;/error&gt;</pre><p>OR </p><pre class="prettyprint">&lt;error&gt;
-&lt;type&gt;MessageNotFoundError\&lt;/type&gt;
-&lt;message&gt;Message could not be found.&lt;/message&gt;
-&lt;/error&gt;</pre>
- </div>
- </div>
- </td><tr>
-</table>
- </div>
-
-
- 
- 
- 
- 
- 
- <div id="commentform">
- <form action="../w/detail.do" method="post">
- <table>
- <tr><td class="vt">
- <input type="hidden" name="pagename" value="MessageRecipients" >
- <input type="hidden" name="token" value="ABZ6GAfn61N79Skl7FB-mw5TdkY6OZ9GVw:1412002953996" >
- <div class="graytext" style="float: right;">
- Hint: You can use <a href="http://code.google.com/p/support/wiki/WikiSyntax">Wiki Syntax.</a>
- </div>
- <div>Enter a comment:</div>
- <textarea name="content" rows="6" cols="100"></textarea><br><br>
- <input type="submit" name="submit" value="Submit" >
- </td>
- </table>
- </form>
- </div>
- 
- 
- 
- 
- 
- <form name="delcom" action="../w/delComment.do" method="POST">
- <input type="hidden" name="sequence_num" value="" >
- <input type="hidden" name="create_time" value="" >
- <input type="hidden" name="mode" value="" >
- <input type="hidden" name="pagename" value="MessageRecipients" >
- <input type="hidden" name="token" value="ABZ6GAfn61N79Skl7FB-mw5TdkY6OZ9GVw:1412002953996" >
- </form>
-
-
- <script src="https://ssl.gstatic.com/codesite/ph/16315335801608708296/js/prettify/prettify.js"></script>
- <script type="text/javascript">
- prettyPrint();
- </script>
-
-<script type="text/javascript" src="https://ssl.gstatic.com/codesite/ph/16315335801608708296/js/dit_scripts.js"></script>
-
-
-
-  
- 
- 
- <script type="text/javascript" src="https://ssl.gstatic.com/codesite/ph/16315335801608708296/js/ph_core.js"></script>
- 
- <script type="text/javascript" src="https://ssl.gstatic.com/codesite/ph/16315335801608708296/js/ph_dwiki.js"></script>
- 
- 
- 
- 
-</div> 
-
-<div id="footer" dir="ltr">
- <div class="text">
- <a href="/projecthosting/terms.html">Terms</a> -
- <a href="http://www.google.com/privacy.html">Privacy</a> -
- <a href="/p/support/">Project Hosting Help</a>
- </div>
-</div>
- <div class="hostedBy" style="margin-top: -20px;">
- <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
- </div>
-
- 
- 
-
-
- 
- </body>
-</html>
+<error>
+<type>MessageNotFoundError\</type>
+<message>Message could not be found.</message>
+</error>
