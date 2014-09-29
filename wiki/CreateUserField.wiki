@@ -47,7 +47,7 @@
         <contact-field>
             <field-name>location</field-name>
             <field-type>text</field-type>
-            <field-value>London</field-value>
+            <field-value>Madrid</field-value>
         </contact-field>
     </contact-fields>
 <h4>
