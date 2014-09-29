@@ -55,7 +55,7 @@
       <photo> 
         <id type="integer">484</id> 
         <name>logo1w.png</name> 
-        <file-url>http://http://newsocialcloud.com/imagenes/logo1w.png</file-url> 
+        <file-url>http://newsocialcloud.com/imagenes/logo1w.png</file-url> 
       </photo> 
       <photo> 
         <id type="integer">485</id> 
