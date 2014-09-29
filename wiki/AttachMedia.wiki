@@ -1,13 +1,78 @@
-#summary One-sentence summary of this page.
+Allows you to attach photos and files to a specific NewSocialCloud message.
 
-= Introduction =
+* URL: *
 
-Add your content here.
+http://login.newsocialcloud.com/api/v1/media.format
 
+* Formats: *
 
-= Details =
+Replace format with either xml or json
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+* HTTP Methods: *
+
+POST
+
+* Parameters: *
+
+application_id: Your application id from http://newsocialcloud.com/developers.
+message_id: The message's id.
+media: Optional. A comma separated list of files or images to attach to the message. Each item in the list must contain the file name with extension and a URL-encoded base64 string representing the data. Format: file_name_1|base64string_1,file_name_2|base64string_2. e.g. logo1w.png|iVBORw0KGgoAAAANSUhEUgAAARMAAABfCAMAAAD8mtMpAAADAFBMVEUAcwsOcRojZitLflOWBR...
+
+* Authentication: *
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+* Success Response: *
+
+<?xml version="1.0" encoding="UTF-8"?>
+<msg>
+  <status>Pending</status>
+  <subject></subject>
+  <tags nil="true"></tags>
+  <user-id type="integer">1</user-id>
+  <recurs>Once</recurs>
+  <recurs-until-gmt type="datetime">2009-11-12T10:26:55Z</recurs-until-gmt>
+  <recurs-until-client type="datetime">2009-11-12T12:26:55Z</recurs-until-client>
+  <message-id type="integer">5</message-id>
+  <message-text>test to FF.</message-text>
+  <message-rich-text><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<p>test to FF.</p>
+</body>
+</html></message-rich-text>
+  <notify-me type="integer">0</notify-me>
+  <send-date-gmt type="datetime">2009-11-12T10:26:55Z</send-date-gmt>
+  <send-date-client type="datetime">2009-11-12T12:26:55Z</send-date-client>
+  <send-to>"Friendfeed - hamgav" <5453></send-to>
+  <timezone-offset-client type="integer">-120</timezone-offset-client>
+  <photos type="array"> 
+    <photo> 
+      <id type="integer">484</id> 
+      <name>logo1w.png</name> 
+      <file_url>http://newsocialcloud.com/imagenes/logo1w.pnng</file_url> 
+    </photo> 
+    <photo> 
+      <id type="integer">485</id> 
+      <name>n1727389556_1512.jpg</name> 
+      <file_url>http://newsocialcloud.com/imagenes/n1727389556_1512.jpg</file_url> 
+    </photo> 
+  </photos> 
+</msg>
+
+* Error Response: *
+
+<error>
+<type>InvalidUsernamePassword</type>
+<message>Username/password is invalid.</message>
+</error>
+
+OR
+
+<error>
+<type>MessageNotFoundError</type>
+<message>Message could not be found.</message>
+</error>
