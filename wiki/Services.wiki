@@ -32,21 +32,21 @@
 <user-service>
     <account-name>Facebook note - newsocialcloudWeb</account-name>
     <account-type>Facebook(note)</account-type>
-    <icon-url>http://newsocialcloud.com/imagenes/facebook.png</icon-url>
+    <icon-url>http://newsocialcloud.com/images/...</icon-url>
     <recipient-id>6304</recipient-id>
     <total-pages type="integer">4</total-pages>
   </user-service>
   <user-service>
     <account-name>Facebook page - Amazon</account-name>
     <account-type>Facebook(page)</account-type>
-    <icon-url>http://newsocialcloud.com/imagenes/facebook.png</icon-url>
+    <icon-url>http://newsocialcloud.com/images/...</icon-url>
     <recipient-id>6296</recipient-id>
     <total-pages type="integer">4</total-pages>
   </user-service>
   <user-service>
     <account-name>Facebook page - newsocialcloud</account-name>
     <account-type>Facebook(page)</account-type>
-    <icon-url>http://newsocialcloud.com/imagenes/facebook.png</icon-url>
+    <icon-url>http://newsocialcloud.com/images/...</icon-url>
     <recipient-id>6289</recipient-id>
     <total-pages type="integer">4</total-pages>
   </user-service>
