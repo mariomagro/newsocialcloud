@@ -30,8 +30,6 @@
 <h4>
 <a name="Success_Response:"></a>Success Response:<a href="#Success_Response:" class="section_anchor"></a>
 </h4>
-<pre class="prettyprint"><xml version="1.0" encoding="UTF-8">
-<user>
     <api-key>**************</api-key>
     <email>***@***.com</email>
     <fullname>newsocialcloud</fullname>
@@ -52,8 +50,6 @@
             <field-value>London</field-value>
         </contact-field>
     </contact-fields>
-</user>
-</pre>
 <h4>
 <a name="Error_Responses:"></a>Error Responses:<a href="#Error_Responses:" class="section_anchor"></a>
 </h4>
