@@ -30,7 +30,7 @@
 <h4><a name="Success_Response:"></a>Success Response:<a href="#Success_Response:" class="section_anchor"></a>
 </h4>
 <user-service>
-    <account-name>Facebook note - newsocialcloudWeb</account-name>
+    <account-name>Facebook note - NewSocialCloud-Web</account-name>
     <account-type>Facebook(note)</account-type>
     <icon-url>http://newsocialcloud.com/images/...</icon-url>
     <recipient-id>6304</recipient-id>
