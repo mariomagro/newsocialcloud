@@ -58,7 +58,7 @@
     <photo> 
       <id type="integer">485</id> 
       <name>n1727389556_1512.jpg</name> 
-      <file_url>http://newsocialcloud.com/imagenes/n1727389556_1512.jpg.</file_url> 
+      <file_url>http://newsocialcloud.com/imagenes/n1727389556_1512.jpg</file_url> 
     </photo> 
   </photos> 
 </msg>
