@@ -60,7 +60,7 @@
       <photo> 
         <id type="integer">485</id> 
         <name>n1727389556_1512.jpg</name> 
-        <file-url>http://newsocialcloud.s3.amazonaws.com/_files/485/n1727389556_1512.jpg</file-url> 
+        <file-url>http://newsocialcloud.com/imagenes/n1727389556_1512.jpg</file-url> 
       </photo> 
     </photos> 
   </msg> 
@@ -84,12 +84,12 @@
       <photo> 
         <id type="integer">480</id> 
         <name>logo1w.png</name> 
-        <file-url>http://newsocialcloud.s3.amazonaws.com/_files/480/logo1w.png</file-url> 
+        <file-url>http://newsocialcloud.com/imagenes/logo1w.png</file-url> 
       </photo> 
       <photo> 
         <id type="integer">481</id> 
         <name>n1727389556_1512.jpg</name> 
-        <file-url>http://newsocialcloud.s3.amazonaws.com/_files/481/n1727389556_1512.jpg</file-url> 
+        <file-url>http://newsocialcloud.com/imagenes/n1727389556_1512.jpg</file-url> 
       </photo> 
     </photos> 
   </msg> 
