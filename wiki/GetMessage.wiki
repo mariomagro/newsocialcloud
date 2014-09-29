@@ -1,13 +1,83 @@
-#summary One-sentence summary of this page.
-
-= Introduction =
-
-Add your content here.
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+<div id="wikicontent">
+<div class="vt" id="wikimaincol">
+<p>Retrieves the details about a specific NewSocialCloud message. </p>
+<h4>
+<a name="URL:"></a>URL:<a href="#URL:" class="section_anchor"></a>
+</h4>
+<p><a href="http://newsocialcloud.com/api/v1/message.format" rel="nofollow">http://newsocialcloud.com/api/v1/message.format</a> </p>
+<h4>
+<a name="Formats:"></a>Formats:<a href="#Formats:" class="section_anchor"></a>
+</h4>
+<p>Replace <tt>format</tt> with either <tt>xml</tt> or <tt>json</tt> </p>
+<h4>
+<a name="HTTP_Methods:"></a>HTTP Methods:<a href="#HTTP_Methods:" class="section_anchor"></a></h4><p>GET </p>
+<h4>
+<a name="Parameters:"></a>Parameters:<a href="#Parameters:" class="section_anchor"></a>
+</h4>
+<ul>
+<li><tt>application_id</tt>: Your application id from <a href="http://newsocialcloud.com/developers" rel="nofollow">http://newsocialcloud.com/developers</a>.</li>
+<li><tt>message_id</tt>: The message&#x27;s id. </li>
+</ul>
+<h4>
+<a name="Authentication:"></a>Authentication:<a href="#Authentication:" class="section_anchor"></a>
+</h4>
+<p>Basic authentication with username and password or remote API key belonging to the newsocialcloud user. </p>
+<h4>
+<a name="Success_Response:"></a>Success Response:<a href="#Success_Response:" class="section_anchor"></a>
+</h4>
+<pre class="prettyprint"><?xml version="1.0" encoding="UTF-8"?>
+<msg>
+  <status>Sent</status>
+  <subject></subject>
+  <tags nil="true"></tags>
+  <user-id type="integer">1</user-id>
+  <recurs>Once</recurs>
+  <recurs-until-gmt type="datetime">2009-11-12T10:26:55Z</recurs-until-gmt>
+  <recurs-until-client type="datetime">2009-11-12T12:26:55Z</recurs-until-client>
+  <message-id type="integer">5</message-id>
+  <message-text>test to FF.</message-text>
+  <message-rich-text><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<p>test to FF.</p>
+</body>
+</html></message-rich-text>
+  <notify-me type="integer">0</notify-me>
+  <send-date-gmt type="datetime">2009-11-12T10:26:55Z</send-date-gmt>
+  <send-date-client type="datetime">2009-11-12T12:26:55Z</send-date-client>
+  <send-to>"Friendfeed - hamgav" <5453></send-to>
+  <timezone-offset-client type="integer">-120</timezone-offset-client>
+  <photos type="array"> 
+    <photo> 
+      <id type="integer">484</id> 
+      <name>logo1w.png</name> 
+      <file_url>http://newsocialcloud.com/imagenes/logo1w.png</file_url> 
+    </photo> 
+    <photo> 
+      <id type="integer">485</id> 
+      <name>n1727389556_1512.jpg</name> 
+      <file_url>http://newsocialcloud.com/imagenes/n1727389556_1512.jpg</file_url> 
+    </photo> 
+  </photos> 
+</msg></pre>
+<h4>
+<a name="Error_Response:"></a>Error Response:<a href="#Error_Response:" class="section_anchor"></a>
+</h4>
+<pre class="prettyprint">
+<error>
+<type>InvalidUsernamePassword</type>
+<message>Username/password is invalid.</message>
+</error>
+</pre>
+<p>OR </p>
+<pre class="prettyprint">
+<error>
+<type>MessageNotFoundError</type>
+<message>Message could not be found.</message>
+</error>
+</pre>
+</div>
+</div>
