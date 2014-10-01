@@ -1,13 +1,9 @@
-#summary One-sentence summary of this page.
+To delete a contact, make a DELETE call using basic authentication.
 
-= Introduction =
+* URL: *
 
-Add your content here.
+http://sendible.com/api/v1/contact.format
 
+*Formats:*
 
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+Replace format with either xml or json
