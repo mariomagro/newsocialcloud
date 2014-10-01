@@ -2,7 +2,7 @@ Allows you to create or update a custom field and set its value for a given cont
 
 *URL:*
 
-http://newsocialcloud.com/api/v1/contact_field.format
+http://login.newsocialcloud.com/api/v1/contact_field.format
 
 *Formats:*
 
