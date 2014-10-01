@@ -14,8 +14,8 @@ GET
 
 * Parameters: *
 
-application_id: Your application id from http://newsocialcloud.com/developers
-filter: Optional. Filter contacts by keyword.
+<p>application_id: Your application id from http://newsocialcloud.com/developers</p>
+<p>filter: Optional. Filter contacts by keyword.</p>
 field_name: Optional. Find contacts that have had this specific field name set using this method.
 field_value: Optional. Find contacts that have had this specific field value set using this method.
 per_page: Optional. The number of contacts to return per page. Maximum is 1000.
