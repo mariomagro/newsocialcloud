@@ -50,7 +50,7 @@ Basic authentication with username and password or remote API key belonging to t
             "uid": "21274802454"
         },
         "message_type": "Post",
-        "responder_fullname": "Rosalia Maria",
+        "responder_fullname": "Rosa Maria",
         "account_detail_id": 104714,
         "relative_created_at": "8 hours ago",
         "post_link": "",
@@ -59,7 +59,7 @@ Basic authentication with username and password or remote API key belonging to t
         "sentiment": 2,
         "isRead": 0,
         "account_name": "newsocialcloud",
-        "post_body": "gostava de fazer 1 pergunta! como é que as notas do jogo sity viil de 11 ou 12 passam para 8? sem que eu tenha comprado seja o que for? é que já não é a 1ª vez que acontece!! e, muito sinceramente começo a ficar cansada !!e, pelo que me tenho percebido há muita gente a deixar este jogo porque por + que as pessoas se esforcem raramente se consegue levar 1 tarefa até ao fim pois é impossivel! a não ser que as pessoas não façam + nada o que não me parece! boa noite e obrigada.",
+        "post_body": "Hi, this is the post-body.",
         "uid": "100000103828925",
         "id": 28428019,
         "responder_identifier": "100000103828925",
