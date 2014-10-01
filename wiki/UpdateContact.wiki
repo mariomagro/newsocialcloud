@@ -1,13 +1,88 @@
-#summary One-sentence summary of this page.
+To update a contact's details, make a PUT call using basic authentication.
 
-= Introduction =
+* URL: *
 
-Add your content here.
+http://login.newsocialcloud.com/api/v1/contact.format
 
+* Formats: *
 
-= Details =
+Replace format with either xml or json
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+* HTTP Methods: *
+
+PUT
+
+* Parameters: *
+
+<p>application_id: Your application id from http://newsocialcloud.com/developers</p>
+<p>contact_id: The contact id.</p>
+<p>first_name: The contact's first name.</p>
+<p>last_name: The contact's last name.</p>
+<p>owner_id: Optional. The newsocialcloud user ID that owns this contact.</p>
+<p>email: Optional. The contact's email address.</p>
+<p>cellphone: Optional.The contact's mobile number.</p>
+<p>birthday: Optional. The contact's date of birth.</p> 
+<p>Format: yyyy-MM-dd e.g. 2012-02-24</p>
+<p>sex: Optional. The contact's gender. Accepts male or female.</p>
+<p>city: Optional. The contact's city.</p>
+<p>country: Optional. The contact's country.</p>
+<p>zip: Optional. The contact's zip/postcode.</p>
+<p>state: Optional. The contact's state.</p>
+<p>occupation: Optional. The contact's occupation.</p>
+<p>addressline1: Optional. The first line of the contact's address.</p>
+<p>addressline2: Optional. The second line of the contact's address.</p>
+<p>fax: Optional. The contact's fax number.</p>
+<p>company: Optional. The contact's company.</p>
+<p>tel: Optional. The contact's telephone number.</p>
+<p>image_url: Optional. The contact's avatar/profile URL.</p>
+<p>notes: Optional. Notes about this contact.</p>
+<p>bio: Optional. The contact's bio information.</p>
+<p>contact_type: Optional. Either Lead, Account or Opportunity.</p>
+<p>lead_source: Optional. One of the following:</p>
+<p>Google AdWords</p>
+<p>Google (organic)</p>
+<p>Other Search Engines</p>
+<p>Social Media</p>
+<p>Automation</p>
+<p>Cold Calling/Telemarketing</p>
+<p>Advertising</p>
+<p>Custom Referral</p>
+<p>Word of Mouth (Non Customers)</p>
+<p>Expo/Seminar</p>
+<p>Direct Mail</p>
+<p>Email Marketing</p>
+<p>Unknown</p>
+
+* Authentication: *
+
+Basic authentication with username and password or remote API key belonging to the newsocialcloud user.
+
+* Success Response: *
+
+  {
+        <p>"image_url": "",</p>
+        <p>"id": 10831941,</p>
+        <p>"notes": "",</p>
+        <p>"first_name": "carpas",</p>
+        <p>"last_name": "missvalles",</p>
+        <p>"full_name": "carpas missvalles",</p>
+        <p>"firstName": "carpas",</p>
+        <p>"lastName": "missvalles",</p>
+        <p>"preference": "Email",</p>
+        <p>"email": "xxxx@xxx.com",</p>
+        <p>"company": "",</p>
+        <p>"occupation": "",</p>
+        <p>"birthday": "",</p>
+        <p>"cellphone": "",</p>
+        <p>"tel": "",</p>
+        <p>"fax": "",</p>
+        <p>"sex": "",</p>
+        <p>"city": "",</p>
+        <p>"addressline1": "",</p>
+        <p>"addressline2": "",</p>
+        <p>"country": "",</p>
+        <p>"state": "",</p>
+        <p>"zip": "",</p>
+        <p>"unsubscribed": 0,</p>
+        <p>"accounts": []</p>
+    }
