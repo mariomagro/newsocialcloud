@@ -1,13 +1,36 @@
-#summary One-sentence summary of this page.
+To shorten a given url, make a GET call using basic authentication. Where available, newsocialcloud will use the authenticated user's link shortening preferences.
 
-= Introduction =
+*URL:*
 
-Add your content here.
+http://login.newsocialcloud.com/api/v1/shorten.format
 
+*Formats:*
 
-= Details =
+Replace format with either xml or json
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*HTTP Methods:*
+
+GET
+
+*Parameters:*
+
+<p>application_id: Your application id from http://newsocialcloud.com/developers</p>
+<p>url: The long url to shorten.</p>
+
+*Authentication:*
+
+Basic authentication with username and password or remote API key belonging to the newsocialcloud user.
+
+*Success Response:*
+
+<result>
+ <status>success</status>
+ <url>http://is.gd/WbezIX</url>
+</result>
+
+*Error Response:*
+
+<error>
+<type>InvalidUsernamePassword</type>
+<message>Username/password is invalid.</message>
+</error>
