@@ -15,7 +15,7 @@ DELETE
 
 *Authentication:*
 
-Basic authentication with username and password or remote API key belonging to the newsocialcloud user.
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
 
 *Success Response:*
 
