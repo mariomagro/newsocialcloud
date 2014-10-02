@@ -1,13 +1,42 @@
-#summary One-sentence summary of this page.
+To retrieve a list of the valid periods for a given social media account detail, make a GET call using basic authentication.
 
-= Introduction =
+*URL:*
 
-Add your content here.
+http://login.newsocialcloud.com/api/v1/account-periods.format
 
+*Formats:*
 
-= Details =
+Replace format with either xml or json
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*HTTP Methods:*
+
+GET
+
+*Parameters:*
+
+<p>application_id: Your application id from http://newsocialcloud.com/developers.html</p>
+<p>account_detail_id: The account detail id for which to retrieve the valid yearmonth codes. Valid account_detail_ids can be retrieved using the using the GetAccountDetails call.</p>
+
+*Authentication:*
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+*Success Response:*
+
+<account-periods>
+  <yearmonth>201409</yearmonth>
+  <yearmonth>201408</yearmonth>
+  <yearmonth>201407</yearmonth>
+  <yearmonth>201406</yearmonth>
+  <yearmonth>201405</yearmonth>
+  <yearmonth>201404</yearmonth>
+  <yearmonth>201403</yearmonth>
+  <yearmonth>201402</yearmonth>
+</account-periods>
+
+*Error Response:*
+
+<error>
+<type>InvalidUsernamePassword</type>
+<message>Username/password is invalid.</message>
+</error>
