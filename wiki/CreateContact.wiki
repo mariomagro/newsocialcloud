@@ -14,7 +14,7 @@ POST
 
 * Parameters: *
 
-<p>application_id: Your application id from http://newsocialcloud.com/developers</p>
+<p>application_id: Your application id from http://newsocialcloud.com/developers.html</p>
 <p>first_name: The contact's first name.</p>
 <p>last_name: The contact's last name.</p>
 <p>owner_id: Optional. The newsocialcloud user ID that owns this contact.</p>
