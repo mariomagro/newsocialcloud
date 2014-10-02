@@ -10,7 +10,7 @@ POST
 
 *Parameters:*
 
-<p>application_id: Your application id from http://newsocialcloud.com/developers</p>
+<p>application_id: Your application id from http://newsocialcloud.com/developers.html</p>
 <p>list_id: The id of the list to remove this item from.</p>
 <p>item_id: The id of the service or contact to be removed.</p>
 
