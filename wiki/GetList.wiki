@@ -1,13 +1,29 @@
-#summary One-sentence summary of this page.
+To retrieve an existing list, make a GET call using basic authentication.
 
-= Introduction =
+*URL:*
 
-Add your content here.
+http://login.newsocialcloud.com/api/v2/list.json
 
+*HTTP Methods:*
 
-= Details =
+GET
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*Parameters:*
+
+<p>application_id: Your application id from http://newsocialcloud.com/developers</p>
+<p>list_id: The id of the list to retrieve.</p>
+
+*Authentication:*
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+*Success Response:*
+
+{
+    "consumers": [],
+    "contributors": [],
+    "id": 630,
+    "user_id": 5131,
+    "list_type": "Social",
+    "list_name": "NewSocialCloud Twitter"
+}
