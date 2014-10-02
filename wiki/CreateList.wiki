@@ -1,13 +1,71 @@
-#summary One-sentence summary of this page.
+To create a new list, make a POST call using basic authentication.
 
-= Introduction =
+*URL:*
 
-Add your content here.
+http://login.newsocialcloud.com/api/v2/list.json
 
+*HTTP Methods:*
 
-= Details =
+POST
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*Parameters:*
+
+<p>application_id: Your application id from http://newsocialcloud.com/developers</p>
+<p>list_name: The name of the list.</p>
+<p>list_type: The type of list this is. Mixed, Social, Email, SMS</p>
+<p>consumers: A comma separated list of user ID's that can post to this list. User ALL to add all team members/users this user manages.</p>
+<p>contributors: A comma separated list of user ID's that can add services to this list. User ALL to add all team members/users this user manages.</p>
+<p>color: Optional. The color for the list. Default: Random color is generated.</p>
+
+*Authentication:*
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+*Success Response:*
+
+{
+    "consumers": [
+        {
+            "user": {
+                "fullname": "Jose Garrido",
+                "id": 59119,
+                "color": "#8694e9",
+                "login": "jgarrido"
+            },
+            "id": 47629
+        },
+        {
+            "user": {
+                "fullname": "Mario Magro",
+                "id": 77515,
+                "color": "#af1c22",
+                "login": "mmagro"
+            },
+            "id": 47630
+        }
+    ],
+    "contributors": [
+        {
+            "user": {
+                "fullname": "Jose Garrido",
+                "id": 59119,
+                "color": "#8694e9",
+                "login": "jgarrido"
+            },
+            "id": 47631
+        },
+        {
+            "user": {
+                "fullname": "Mario Magro",
+                "id": 77515,
+                "color": "#af1c22",
+                "login": "mmagro"
+            },
+            "id": 47632
+        }
+    ],
+    "id": 47925,
+    "user_id": 5131,
+    "list_type": "Social",
+    "list_name": "My List"
+}
