@@ -10,7 +10,7 @@ GET
 
 * Parameters: *
 
-application_id: Your application id from http://newsocialcloud.com/developers.
+application_id: Your application id from http://newsocialcloud.com/developers.html
 timezone: Optional. Pass the timezoneOffsetClient value from the browser. This will be used to determine if the user's browser timezone differs from that in their profile preferences.
 
 * Authentication: *
