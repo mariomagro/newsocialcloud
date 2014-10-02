@@ -32,6 +32,7 @@ Basic authentication with username and password or remote API key belonging to t
   <yearmonth>201404</yearmonth>
   <yearmonth>201403</yearmonth>
   <yearmonth>201402</yearmonth>
+  <yearmonth>201401</yearmonth>
 </account-periods>
 
 *Error Response:*
