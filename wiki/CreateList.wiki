@@ -10,7 +10,7 @@ POST
 
 *Parameters:*
 
-<p>application_id: Your application id from http://newsocialcloud.com/developers</p>
+<p>application_id: Your application id from http://newsocialcloud.com/developers.html</p>
 <p>list_name: The name of the list.</p>
 <p>list_type: The type of list this is. Mixed, Social, Email, SMS</p>
 <p>consumers: A comma separated list of user ID's that can post to this list. User ALL to add all team members/users this user manages.</p>
