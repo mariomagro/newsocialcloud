@@ -1,13 +1,25 @@
-#summary One-sentence summary of this page.
+To add an item to a list, make a POST call using basic authentication.
 
-= Introduction =
+*URL:*
 
-Add your content here.
+http://login.newsocialcloud.com/api/v2/list_add.json
 
+*HTTP Methods:*
 
-= Details =
+POST
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*Parameters:*
+
+<p>application_id: Your application id from http://newsocialcloud.com/developers</p>
+<p>list_id: The id of the list to add this item to.</p>
+<p>item_id: The recipient_id of the service retrieved from the Services call or the contact_id of a contact.</p>
+
+*Authentication:*
+
+Basic authentication with username and password or remote API key belonging to the newsocialcloud user.
+
+*Success Response:*
+
+{
+   "status": "OK"
+}
