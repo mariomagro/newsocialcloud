@@ -17,7 +17,7 @@
 <a name="Parameters:"></a>Parameters:<a href="#Parameters:" class="section_anchor"></a>
 </h4>
 <ul>
-<li><tt>application_id</tt>: Your application id from <a href="http://newsocialcloud.com/developers" rel="nofollow">http://newsocialcloud.com/developers</a>. </li>
+<li><tt>application_id</tt>: Your application id from <a href="http://newsocialcloud.com/developers.html" rel="nofollow">http://newsocialcloud.com/developers.html</a>. </li>
 <li><tt>type</tt>: Possible values are <tt>all</tt>, <tt>social</tt>, <tt>email</tt>, <tt>sms</tt>, <tt>group</tt>, <tt>contacts</tt> </li>
 <li><tt>filter</tt>: Optional. Filter services and/or recipients by keyword. </li>
 <li><tt>per_page</tt>: Optional. Number of results to return per page. Default: <tt>100</tt> </li>
