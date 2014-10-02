@@ -49,19 +49,19 @@ OR, if the list type is Email or SMS:
 
 [
     {
-        "id": 10180451,
-        "user_id": null,
-        "title": "Achoeng Adhie",
-        "icon": "http://newsocialcloud-public.s3.amazonaws.com/images/silhouette.gif",
-        "item_type": "Email",
-        "description": "xxxxx@xxxxx.com"
+        <p>"id": 10180451,</p>
+        <p>"user_id": null,</p>
+        <p>"title": "Achoeng Adhie",</p>
+        <p>"icon": "http://newsocialcloud-public.s3.amazonaws.com/images/silhouette.gif",</p>
+        <p>"item_type": "Email",</p>
+        <p>"description": "xxxxx@xxxxx.com"</p>
     },
     {
-        "id": 10180452,
-        "user_id": null,
-        "title": "Islam Samy",
-        "icon": "http://newsocialcloud-public.s3.amazonaws.com/images/silhouette.gif",
-        "item_type": "Email",
-        "description": "xxxxx@xxxxx.com"
+        <p>"id": 10180452,</p>
+        <p>"user_id": null,</p>
+        <p>"title": "Islam Samy",</p>
+        <p>"icon": "http://newsocialcloud-public.s3.amazonaws.com/images/silhouette.gif",</p>
+        <p>"item_type": "Email",</p>
+        <p>"description": "xxxxx@xxxxx.com"</p>
     }
 ]
