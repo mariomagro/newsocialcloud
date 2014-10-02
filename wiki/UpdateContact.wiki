@@ -14,7 +14,7 @@ PUT
 
 * Parameters: *
 
-<p>application_id: Your application id from http://newsocialcloud.com/developers</p>
+<p>application_id: Your application id from http://newsocialcloud.com/developers.html</p>
 <p>contact_id: The contact id.</p>
 <p>first_name: The contact's first name.</p>
 <p>last_name: The contact's last name.</p>
