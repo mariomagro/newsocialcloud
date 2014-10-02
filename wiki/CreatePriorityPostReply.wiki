@@ -14,9 +14,9 @@ POST
 
 * Parameters: *
 
-application_id: Your application id from http://newsocialcloud.com/developers
-priority_post_id: The ID of the priority post that you are responding to, retrieved using the GetPriorityPosts call.
-message: The message text to respond with.
+<p>application_id: Your application id from http://newsocialcloud.com/developers.html</p>
+<p>priority_post_id: The ID of the priority post that you are responding to, retrieved using the GetPriorityPosts call.</p>
+<p>message: The message text to respond with.</p>
 
 * Authentication: *
 
