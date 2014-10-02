@@ -10,7 +10,7 @@ DELETE
 
 * Parameters: *
 
-application_id: Your application id from http://newsocialcloud.com/developers.
+application_id: Your application id from http://newsocialcloud.com/developers.html
 
 file_id: The id of the file to be deleted.
 
