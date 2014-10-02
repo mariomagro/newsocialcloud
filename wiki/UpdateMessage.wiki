@@ -18,7 +18,7 @@ PUT
 
 * Parameters: *
 
-application_id: Your application id from http://newsocialcloud.com/developers.
+application_id: Your application id from http://newsocialcloud.com/developers.html
 
 message_id: The id of the message to be updated.
 
