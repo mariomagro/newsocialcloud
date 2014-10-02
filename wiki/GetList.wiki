@@ -20,10 +20,10 @@ Basic authentication with username and password or remote API key belonging to t
 *Success Response:*
 
 {
-    "consumers": [],
-    "contributors": [],
-    "id": 630,
-    "user_id": 5131,
-    "list_type": "Social",
-    "list_name": "NewSocialCloud Twitter"
+    <p>"consumers": [],</p>
+    <p>"contributors": [],</p>
+    <p>"id": 630,</p>
+    <p>"user_id": 5131,</p>
+    <p>"list_type": "Social",</p>
+    <p>"list_name": "NewSocialCloud Twitter"</p>
 }
