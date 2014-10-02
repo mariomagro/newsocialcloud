@@ -14,7 +14,7 @@ POST
 
 * Parameters: *
 
-application_id: Your application id from http://newsocialcloud.com/developers.
+application_id: Your application id from http://newsocialcloud.com/developers.html
 
 send_to: A comma separated list of recipient_id's retrieved using the Services call, email addresses and/or mobile numbers for SMS.
 
