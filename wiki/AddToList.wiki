@@ -10,7 +10,7 @@ POST
 
 *Parameters:*
 
-<p>application_id: Your application id from http://newsocialcloud.com/developers</p>
+<p>application_id: Your application id from http://newsocialcloud.com/developers.html</p>
 <p>list_id: The id of the list to add this item to.</p>
 <p>item_id: The recipient_id of the service retrieved from the Services call or the contact_id of a contact.</p>
 
