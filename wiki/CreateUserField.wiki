@@ -19,7 +19,7 @@
 <a name="Parameters:"></a>Parameters:<a href="#Parameters:" class="section_anchor"></a>
 </h4>
 <ul>
-<li><tt>application_id</tt>: Your application id from <a href="http://newsocialcloud.com/developers" rel="nofollow">http://newsocialcloud.com/developers</a>. </li>
+<li><tt>application_id</tt>: Your application id from <a href="http://newsocialcloud.com/developers.html" rel="nofollow">http://newsocialcloud.com/developers</a>. </li>
 <li><tt>field_name</tt>: Required. The name of the field you would like to create or update.   </li>
 <li><tt>field_value</tt>: Required. The value of the <tt>field_name</tt> that you would like to set. </li>
 </ul>
