@@ -1,13 +1,71 @@
-#summary One-sentence summary of this page.
+To update an existing list, make a PUT call using basic authentication.
 
-= Introduction =
+*URL:*
 
-Add your content here.
+http://login.newsocialcloud.com/api/v2/list.json
 
+*HTTP Methods:*
 
-= Details =
+PUT
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*Parameters:*
+
+<p>application_id: Your application id from http://newsocialcloud.com/developers</p>
+<p>list_id: The id of the list to update.</p>
+<p>list_name: The name of the list.</p>
+<p>consumers: A comma separated list of user ID's that can post using this list. User ALL to add all team members/users this user manages.</p>
+<p>contributors: A comma separated list of user ID's that can add services to this list. User ALL to add all team members/users this user manages.</p>
+<p>color: Optional. The color for the list.</p>
+
+*Authentication:*
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+*Success Response:*
+
+{
+    "consumers": [
+        {
+            "user": {
+                <p>"fullname": "Mario Magro",</p>
+                <p>"id": 59119,</p>
+                <p>"color": "#8694e9",</p>
+                <p>"login": "mmagro"</p>
+            },
+            "id": 47629
+        },
+        {
+            "user": {
+                <p>"fullname": "Jose Garrido",</p>
+                <p>"id": 77515,</p>
+                <p>"color": "#af1c22",</p>
+                <p>"login": "jgarrido"</p>
+            },
+            "id": 47630
+        }
+    ],
+    "contributors": [
+        {
+            "user": {
+                <p>"fullname": "Mario Magro",</p>
+                <p>"id": 59119,</p>
+                <p>"color": "#8694e9",</p>
+                <p>"login": "mmagro"</p>
+            },
+            "id": 47631
+        },
+        {
+            "user": {
+                <p>"fullname": "Jose Garrido",</p>
+                <p>"id": 77515,</p>
+                <p>"color": "#af1c22",</p>
+                <p>"login": "jgarrido"</p>
+            },
+            "id": 47632
+        }
+    ],
+    <p>"id": 47925,</p>
+    <p>"user_id": 5131,</p>
+    <p>"list_type": "Social",</p>
+    <p>"list_name": "My List"</p>
+}
