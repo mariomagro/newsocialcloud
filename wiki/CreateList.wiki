@@ -27,19 +27,19 @@ Basic authentication with username and password or remote API key belonging to t
     "consumers": [
         {
             "user": {
-                "fullname": "Jose Garrido",
-                "id": 59119,
-                "color": "#8694e9",
-                "login": "jgarrido"
+                <p>"fullname": "Jose Garrido",</p>
+                <p>"id": 59119,</p>
+                <p>"color": "#8694e9",</p>
+                <p>"login": "jgarrido"</p>
             },
             "id": 47629
         },
         {
             "user": {
-                "fullname": "Mario Magro",
-                "id": 77515,
-                "color": "#af1c22",
-                "login": "mmagro"
+                <p>"fullname": "Mario Magro",</p>
+                <p>"id": 77515,</p>
+                <p>"color": "#af1c22",</p>
+                <p>"login": "mmagro"</p>
             },
             "id": 47630
         }
@@ -47,25 +47,25 @@ Basic authentication with username and password or remote API key belonging to t
     "contributors": [
         {
             "user": {
-                "fullname": "Jose Garrido",
-                "id": 59119,
-                "color": "#8694e9",
-                "login": "jgarrido"
+                <p>"fullname": "Jose Garrido",</p>
+                <p>"id": 59119,</p>
+                <p>"color": "#8694e9",</p>
+                <p>"login": "jgarrido"</p>
             },
             "id": 47631
         },
         {
             "user": {
-                "fullname": "Mario Magro",
-                "id": 77515,
-                "color": "#af1c22",
-                "login": "mmagro"
+                <p>"fullname": "Mario Magro",</p>
+                <p>"id": 77515,</p>
+                <p>"color": "#af1c22",</p>
+                <p>"login": "mmagro"</p>
             },
             "id": 47632
         }
     ],
-    "id": 47925,
-    "user_id": 5131,
-    "list_type": "Social",
-    "list_name": "My List"
+    <p>"id": 47925,</p>
+    <p>"user_id": 5131,</p>
+    <p>"list_type": "Social",</p>
+    <p>"list_name": "My List"</p>
 }
