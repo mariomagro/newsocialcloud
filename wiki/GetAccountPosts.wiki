@@ -1,13 +1,85 @@
-#summary One-sentence summary of this page.
+To retrieve daily statistics for a given social media account detail, make a GET call using basic authentication. The days returned represent the date for the given year/month period.
 
-= Introduction =
+*URL:*
 
-Add your content here.
+http://login.newsocialcloud.com/api/v1/account-posts.format
 
+*Formats:*
 
-= Details =
+Replace format with either xml or json
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*HTTP Methods:*
+
+GET
+
+*Parameters:*
+
+<p>application_id: Your application id from http://newsocialcloud.com/developers.html</p>
+<p>account_detail_id: The account detail id for which to retrieve the valid yearmonth codes. Valid account_detail_ids can be retrieved using the using the GetAccountDetails call.</p>
+<p>account_statistic_id: Optional. The account_statistic_id for which to retrieve posts. Valid account_statistic_ids can be retrieved using the using the GetAccountStatistics call.</p>
+
+*Authentication:*
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+*Success Response:*
+
+<posts>
+        <post>
+                <account-statistic-id type="integer">4006982</account-statistic-id>
+                <clientTime type="datetime">2014-03-29T12:55:06Z</clientTime>
+                <message-html>hidng plek, body pgal, kpla pyeng ,.,,allahu akbar</message-html>
+                <message-text>hidng plek, body pgal, kpla pyeng ,.,,allahu akbar</message-text>
+                <metric-1-name>Comments</metric-1-name>
+                <metric-1-value type="decimal">0.0</metric-1-value>
+                <metric-2-name>Likes</metric-2-name>
+                <metric-2-value type="decimal">0.0</metric-2-value>
+                <post-link/>
+                <post-link-name/>
+                <post-picture/>
+                <poster-avatar>http://graph.facebook.com/100002382677074/picture</poster-avatar>
+                <poster-fullname>BaNnex AZ DeHh</poster-fullname>
+                <sentiment type="integer">0</sentiment>
+                <post-responses type="array"/>
+        </post>
+        <post>
+                <account-statistic-id type="integer">4006982</account-statistic-id>
+                <clientTime type="datetime">2012-03-28T13:45:48Z</clientTime>
+                <message-html>
+                NewSocialCloud I tried to reach your help-desk but I could not. Would you please check why my account ayman@oasisventures.net is suspended? I have a lot of work to do. Thanks
+                </message-html>
+                <message-text>
+                NewSocialCloud I tried to reach your help-desk but I could not. Would you please check why my account ayman@oasisventures.net is suspended? I have a lot of work to do. Thanks
+                </message-text>
+                <metric-1-name>Comments</metric-1-name>
+                <metric-1-value type="decimal">1.0</metric-1-value>
+                <metric-2-name>Likes</metric-2-name>
+                <metric-2-value type="decimal">0.0</metric-2-value>
+                <post-link/>
+                <post-link-name/>
+                <post-picture/>
+                <poster-avatar>http://graph.facebook.com/726184005/picture</poster-avatar>
+                <poster-fullname>Ayman Albarbary</poster-fullname>
+                <sentiment type="integer">0</sentiment>
+                <post-responses type="array">
+                        <post-response>
+                                <avatar>http://graph.facebook.com/21274802454/picture</avatar>
+                                <body>
+                                Could you try sign in now? You should have access again.
+                                </body>
+                                <created-at type="datetime">2012-03-28T18:02:39Z</created-at>
+                                <responder-fullname>newsocialcloud</responder-fullname>
+                                <responder-identifier>21274802454_10150611646282455_21331651</responder-identifier>
+                                <sentiment type="integer">0</sentiment>
+                                <url/>
+                        </post-response>
+                </post-responses>
+        </post>
+</posts>
+
+*Error Response:*
+
+<error>
+<type>InvalidUsernamePassword</type>
+<message>Username/password is invalid.</message>
+</error>
