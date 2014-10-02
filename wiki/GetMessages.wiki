@@ -17,7 +17,7 @@
 <a name="Parameters:"></a>Parameters:<a href="#Parameters:" class="section_anchor"></a>
 </h4>
 <ul>
-<li><tt>application_id</tt>: Your application id from <a href="http://newsocialcloud.com/developers" rel="nofollow">http://newsocialcloud.com/developers</a>. </li>
+<li><tt>application_id</tt>: Your application id from <a href="http://newsocialcloud.com/developers.html" rel="nofollow">http://newsocialcloud.com/developers.html</a>. </li>
 <li><tt>status</tt>: Optional. The message status. Default is <tt>Pending</tt>. Possible values are <tt>Pending</tt>, <tt>Draft</tt> or <tt>Sent</tt>. </li>
 <li><tt>filter</tt>: Optional. Filter messages by keyword.  </li>
 <li><tt>per_page</tt>: Optional. The number of messages to return per page. </li>
