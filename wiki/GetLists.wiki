@@ -1,13 +1,89 @@
-#summary One-sentence summary of this page.
+To retrieve lists of services for a given user, make a GET call using basic authentication.
 
-= Introduction =
+*URL:*
 
-Add your content here.
+http://login.newsocialcloud.com/api/v2/lists.json
 
+*HTTP Methods:*
 
-= Details =
+GET
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*Parameters:*
+
+<p>application_id: Your application id from http://newsocialcloud.com/developers</p>
+<p>type: Optional. all, owner, contributor or consumer.</p>
+<p>list_type: Optional. mixed, social, sms or email. To filter by multiple list types, separate with commas. E.g. sms,email.</p>
+
+*Authentication:*
+
+Basic authentication with username and password or remote API key belonging to the newsocialcloud user.
+
+*Success Response:*
+
+[
+    {
+        "consumers": [
+            {
+                "user": {
+                    "fullname": "Jose Garrido",
+                    "id": 59119,
+                    "color": "#8694e9",
+                    "login": "jgarrido"
+                },
+                "id": 47629
+            },
+            {
+                "user": {
+                    "fullname": "Mario Magro",
+                    "id": 77515,
+                    "color": "#af1c22",
+                    "login": "mmagro"
+                },
+                "id": 47630
+            }
+        ],
+        "contributors": [
+            {
+                "user": {
+                    "fullname": "Jose Garrido",
+                    "id": 59119,
+                    "color": "#8694e9",
+                    "login": "jgarrido"
+                },
+                "id": 47631
+            },
+            {
+                "user": {
+                    "fullname": "Mario Magro",
+                    "id": 77515,
+                    "color": "#af1c22",
+                    "login": "mmagro"
+                },
+                "id": 47632
+            }
+        ],
+        "id": 47925,
+        "user_id": 5131,
+        "item_count": 0,
+        "list_type": "Social",
+        "list_name": "My List"
+    },
+    {
+        "consumers": [],
+        "contributors": [],
+        "id": 630,
+        "user_id": 5131,
+        "item_count": 2,
+        "list_type": "Social",
+        "list_name": "newsocialcloud Twitter"
+    },
+    {
+        "consumers": [],
+        "contributors": [],
+        "id": 9631,
+        "user_id": 5131,
+        "item_count": 0,
+        "list_type": "Social",
+        "list_name": "Twitter and Facebook"
+    }
+]
