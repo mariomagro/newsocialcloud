@@ -14,7 +14,7 @@ DELETE
 
 *Parameters:*
 
-<p>application_id: Your application id from http://newsocialcloud.com/developers</p>
+<p>application_id: Your application id from http://newsocialcloud.com/developers.html</p>
 <P>contact_id: The id of the contact to be deleted.</p>
 
 *Authentication:*
