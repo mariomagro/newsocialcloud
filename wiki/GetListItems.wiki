@@ -10,7 +10,7 @@ GET
 
 *Parameters:*
 
-<p>application_id: Your application id from http://newsocialcloud.com/developers</p>
+<p>application_id: Your application id from http://newsocialcloud.com/developers.html</p>
 <p>list_id: The id of the list whose items you want to retrieve.</p>
 <p>per_page: Optional. The number of results to return per page.</p>
 <p>page: Optional. The page number for the results you wish to retrieve. Default: 1.</p>
