@@ -1,13 +1,36 @@
-#summary One-sentence summary of this page.
+To update a media file for a given user, make a PUT call using basic authentication.
 
-= Introduction =
+*URL:*
 
-Add your content here.
+http://login.newsocialcloud.com/api/v2/media.json
 
+*HTTP Methods:*
 
-= Details =
+PUT
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*Parameters:*
+
+<p>application_id: Your application id from http://newsocialcloud.com/developers.html</p>
+<p>file_id: The id of the file to be updated.</p>
+<p>file_name: The new name of the file.</p>
+
+*Authentication:*
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+*Success Response:*
+
+ {
+            "id": 3717139,
+            "file_name": "new logo.png",
+            "content_type": "image/png",
+            "file_size": "5929",
+            "link_title": "",
+            "link_url": "",
+            "link_url_display": "",
+            "link_description": "",
+            "type": "image",
+            "url_original": "https://s3.amazonaws.com/files.newsocialcloud.com/3717139/original.png",
+            "url_med": "https://s3.amazonaws.com/files.newsocialcloud.com/3717139/medium.png",
+            "url_thumb": "https://s3.amazonaws.com/files.newsocialcloud.com/3717139/thumb.png"
+        }
