@@ -14,21 +14,21 @@ POST
 <p>object_name: Required. Valid values are Contact, SMSIn.</p>
 <p>event_name: Required. Valid values are Create, Update, Delete.</p>
 <p>verification_code: Required. This parameter and value will be passed to your callback URL for verification.</p>
-<p>callback_url: Required. This is the URL that newsocialcloud will POST to when the event fires.</p>
+<p>callback_url: Required. This is the URL that NewSocialCloud will POST to when the event fires.</p>
 
 *Authentication:*
 
-Basic authentication with username and password or remote API key belonging to the newsocialcloud user.
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
 
 *Success Response:*
 
 {
-    "object_name": "Contact",
-    "callback_url": "http://myurl.com",
-    "subscribers": [],
-    "id": 1,
-    "event_name": "Create",
-    "verification_code": "test123"
+    <p>"object_name": "Contact",</p>
+    <p>"callback_url": "http://myurl.com",</p>
+    <p>"subscribers": [],</p>
+    <p>"id": 1,</p>
+    <p>"event_name": "Create",</p>
+    <p>"verification_code": "test123"</p>
 }
 
 *Error Response:*
