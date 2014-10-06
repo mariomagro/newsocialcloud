@@ -2,7 +2,7 @@ To create a support ticket on behalf of the authenticated user, make a POST requ
 
 *URL:*
 
-http://newsocialcloud.com/api/v2/support_ticket.json
+http://login.newsocialcloud.com/api/v2/support_ticket.json
 
 *HTTP Methods:*
 
