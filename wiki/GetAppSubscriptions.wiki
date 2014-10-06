@@ -1,13 +1,47 @@
-#summary One-sentence summary of this page.
+To retrieve a list of all active event subscriptions for your application, make a GET request.
 
-= Introduction =
+*URL:*
 
-Add your content here.
+http://login.newsocialcloud.com/api/v2/developer_subscriptions.json
 
+*HTTP Methods:*
 
-= Details =
+GET
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*Parameters:*
+
+application_id: Your application id from http://newsocialcloud.com/developers.html
+
+*Authentication:*
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+*Success Response:*
+
+[
+    {
+        "object_name": "Contact",
+        "callback_url": "http://myurl.com",
+        "subscribers": [
+            {
+                "user": {
+                    "fullname": "Mario Magro",
+                    "api_key": "**********",
+                    "login": "newsocialcloud",
+                    "email": "**@****.***"
+                },
+                "id": 1
+            }
+        ],
+        "id": 1,
+        "event_name": "Create",
+        "verification_code": "test123"
+    }
+]
+
+*Error Response:*
+
+<error>
+<type>InvalidUsernamePassword</type>
+<message>Username/password is invalid.</message>
+</error>
