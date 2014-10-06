@@ -28,7 +28,7 @@ Basic authentication with username and password or remote API key belonging to t
                     <p>"fullname": "Mario Magro",</p>
                     <p>"api_key": "XXXXXXXX",</p>
                     <p>"login": "newsocialcloud",</p>
-                    <p>"email": "info@newsocialcloud.com"</p>
+                    <p>"email": "mario...@newsocialcloud.com"</p>
                 },
                 "id": 1
             }
