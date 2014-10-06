@@ -48,7 +48,9 @@ Basic authentication with username and password or remote API key belonging to t
 </user>
 
 <p></p>
+<p></p>
 *Error Responses:*
+<p></p>
 <p></p>
 
 <error>
