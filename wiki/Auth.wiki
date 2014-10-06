@@ -1,13 +1,28 @@
-#summary One-sentence summary of this page.
+To authenticate against the API and retrieve an access token, make a GET call using basic authentication.
 
-= Introduction =
+*URL:*
 
-Add your content here.
+http://login.newsocialcloud.com/api/v2/auth
 
+*HTTP Methods:*
 
-= Details =
+GET
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*Parameters:*
+
+<p>application_id: Your application id from http://newsocialcloud.com/developers.html</p>
+<p>redirect_uri: The URI to send the user to after authenticating. newsocialcloud will redirect the user back to this URL with either #error_type= or #access_token= appended to the URL. You will need to store the access_token for any subsequent API requests.</p>
+<p>site: Optional. For white label sites, pass the site code when you authenticate.</p>
+<p>source: Optional. Specify client or server as the source. If client is set, the response is sent in the following format:#/success/access_token or #/error/error_message If server is set, the response is sent in the following format: ?error_type=errorType&error_message=errorMessage ?access_token=access_token</p>
+
+*Authentication:*
+
+Basic authentication with username and password belonging to the newsocialcloud user.
+
+*Success Response:*
+
+User is redirected to redirect_uri with #access_token= appended to the URL.
+
+*Error Responses:*
+
+User is redirected to redirect_uri with #error_type= appended to the URL.
