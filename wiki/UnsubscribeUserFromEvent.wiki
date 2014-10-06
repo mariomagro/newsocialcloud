@@ -1,13 +1,29 @@
-#summary One-sentence summary of this page.
+To unsubscribe the authenticated user from a subscription, make a DELETE request.
 
-= Introduction =
+*URL:*
 
-Add your content here.
+http://login.newsocialcloud.com/api/v2/event_subscription.json
 
+*HTTP Methods:*
 
-= Details =
+DELETE
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*Parameters:*
+
+<p>application_id: Your application id from http://newsocialcloud.com/developers.html</p>
+<p>subscription_id: Required. The specific developer_subscription event that the authenticated user will be subscribing to.</p>
+
+*Authentication:*
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user that will be unsubscribing from this event.
+
+*Success Response:*
+
+{"status": "OK" }
+
+*Error Response:*
+
+<error>
+<type>InvalidUsernamePassword</type>
+<message>Username/password is invalid.</message>
+</error>
