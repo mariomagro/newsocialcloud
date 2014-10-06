@@ -47,7 +47,9 @@ Basic authentication with username and password or remote API key belonging to t
   <service-count type="integer">88</service-count> 
 </user>
 
+<p></p>
 *Error Responses:*
+<p></p>
 
 <error>
 <type>InvalidUsernamePassword</type>
