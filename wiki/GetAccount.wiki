@@ -52,7 +52,7 @@ To edit an account, you need to open a window with the connection_url. After an 
                 "parameter_name": "number",
                 "options": "|Available inbound numbers...,|United States (+1),+14411223344|&nbsp;&nbsp;-&nbsp;&nbsp;(442) 333-SEND,+11223344|&nbsp;&nbsp;-&nbsp;&nbsp;(917) 7-GOSAVE,+11223344|&nbsp;&nbsp;-&nbsp;&nbsp;(717) 96-START,+11223344|&nbsp;&nbsp;-&nbsp;&nbsp;(315) 820-2559,|United Kingdom (+44),+4411223344|&nbsp;&nbsp;-&nbsp;&nbsp;(203) 32-ADDME,+4411223344|&nbsp;&nbsp;-&nbsp;&nbsp;(203) 322-INFO",
                 "post_description": "Select an opt-in number from the list and share this with your customers. <br/>Want your own number? Contact us about getting a 
-				<a href=\"mailto:$email?subject=Custom Number\">custom number/shortcode</a> for your company."
+				<a href="mailto:$email?subject=Custom Number">custom number-shortcode</a> for your company."
             },
             {
                 "parameter_description": "Add contacts to this group",
