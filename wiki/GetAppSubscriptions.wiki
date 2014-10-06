@@ -20,22 +20,22 @@ Basic authentication with username and password or remote API key belonging to t
 
 [
     {
-        "object_name": "Contact",
-        "callback_url": "http://myurl.com",
-        "subscribers": [
+        <p>"object_name": "Contact",</p>
+        <p>"callback_url": "http://myurl.com",</p>
+        <p>"subscribers": [</p>
             {
-                "user": {
-                    "fullname": "Mario Magro",
-                    "api_key": "**********",
-                    "login": "newsocialcloud",
-                    "email": "**@****.***"
+                <p>"user": {</p>
+                    <p>"fullname": "Mario Magro",</p>
+                    <p>"api_key": "**********",</p>
+                    <p>"login": "newsocialcloud",</p>
+                    <p>"email": "**@****.***"</p>
                 },
                 "id": 1
             }
         ],
-        "id": 1,
-        "event_name": "Create",
-        "verification_code": "test123"
+        <p>"id": 1,</p>
+        <p>"event_name": "Create",</p>
+        <p>"verification_code": "test123"</p>
     }
 ]
 
