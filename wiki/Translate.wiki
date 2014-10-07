@@ -1,13 +1,32 @@
-#summary One-sentence summary of this page.
+Translate text to the specified language. Returns content as plain text, not in JSON format.
 
-= Introduction =
+*URL:*
 
-Add your content here.
+http://login.newsocialcloud.com/api/v0/translate
 
+*HTTP Methods:*
 
-= Details =
+GET
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*Authentication:*
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+*Parameters:*
+
+<p>application_id: Your application id from http://newsocialcloud.com/developers.html</p>
+<p>text: The text to be translated.</p>
+<p>lang: The language code to translate into. E.g. en</p>
+
+*Success Response:*
+
+This is the text translated.
+
+*Error Response:*
+
+{{
+    "error": {
+        <p>"type": "InvalidHTTPMethod",</p>
+        <p>"message": "PUTisinvalidforthisendpoint."</p>
+    }
+}
