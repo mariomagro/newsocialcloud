@@ -1,13 +1,32 @@
-#summary One-sentence summary of this page.
+To store a search term so that it's added to the list of previous social searches for the authenticated user, make a POST request using basic authentication.
 
-= Introduction =
+*URL:*
 
-Add your content here.
+http://newsocialcloud.com/api/v2/search_term
 
+*HTTP Methods:*
 
-= Details =
+POST
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*Parameters:*
+
+<p>application_id: Your application id from http://newsocialcloud.com/developers.html</p>
+<p>search_term:. The search term (query) to be stored.</p>
+
+*Authentication:*
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+*Success Response:*
+
+    {
+        "id": 26576,
+        "search_term": "burger king"
+    }
+
+*Error Response:*
+	
+<error>
+<type>InvalidUsernamePassword</type>
+<message>Username/password is invalid.</message>
+</error>
