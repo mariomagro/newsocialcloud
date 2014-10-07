@@ -2,7 +2,7 @@ To store a search term so that it's added to the list of previous social searche
 
 *URL:*
 
-http://newsocialcloud.com/api/v2/search_term
+http://login.newsocialcloud.com/api/v2/search_term
 
 *HTTP Methods:*
 
