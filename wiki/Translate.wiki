@@ -24,7 +24,7 @@ This is the text translated.
 
 *Error Response:*
 
-{{
+{
     "error": {
         <p>"type": "InvalidHTTPMethod",</p>
         <p>"message": "PUTisinvalidforthisendpoint."</p>
