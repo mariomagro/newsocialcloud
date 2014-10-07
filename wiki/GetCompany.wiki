@@ -26,11 +26,11 @@ Basic authentication with username and password or remote API key belonging to t
     "team_members": [
         {
             "fullname": "Peter Smith",
-            "avatar": "http://www.gravatar.com/avatar/193b886f0da67a7935e42e108f2ad433?s=55&d=http://newsocialcloud.com/images/silhouette.png"
+            "avatar": "http://www.gravatar.com/avatar=http://newsocialcloud.com/images/silhouette.png"
         },
         {
             "fullname": "Jon Smith",
-            "avatar": "http://www.gravatar.com/avatar/db2d1a58da10b9b99c9c98ae518b8054?s=55&d=http://newsocialcloud.com/images/silhouette.png"
+            "avatar": "http://www.gravatar.com/avatar=http://newsocialcloud.com/images/silhouette.png"
         }
     ],
     "company_website": "http://xxxxxxx.com",
