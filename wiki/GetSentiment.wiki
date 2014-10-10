@@ -21,72 +21,72 @@ Basic authentication with username and password or remote API key belonging to t
 
 [
 {
-        "type" : "microblogs",
-        "content" : "",
-        "sentiment" : 0,
-        "created_at_client" : "2014/05/28 06:22:27 +0000",
-        "domain" : "twitter.com",
-        "source" : "twitter",
-        "username" : "angelortega",
-        "userimage" : "http:\/\/pbs.twimg.com\/profile_images\/471514458184245248\/JTgQH4v3_normal.jpeg",
-        "link" : "http:\/\/twitter.com\/JRMA421\/statuses\/471521861973852161",
-        "description" : "",
-        "id" : 200028632,
-        "term" : "burger king",
-        "title" : "RT @ckuldys22: burger king is closed life is over",
-        "userlink" : "http:\/\/twitter.com\/JRMA421",
-        "favicon" : "http:\/\/www.google.com\/s2\/favicons?domain=twitter.com"
+        <p>"type" : "microblogs",</p>
+        <p>"content" : "",</p>
+        <p>"sentiment" : 0,</p>
+        <p>"created_at_client" : "2014/05/28 06:22:27 +0000",</p>
+        <p>"domain" : "twitter.com",</p>
+        <p>"source" : "twitter",</p>
+        <p>"username" : "angelortega",</p>
+        <p>"userimage" : "http:\/\/pbs.twimg.com\/profile_images\/471514458184245248\/JTgQH4v3_normal.jpeg",</p>
+        <p>"link" : "http:\/\/twitter.com\/JRMA421\/statuses\/471521861973852161",</p>
+        <p>"description" : "",</p>
+        <p>"id" : 200028632,</p>
+        <p>"term" : "burger king",</p>
+        <p>"title" : "RT @ckuldys22: burger king is closed life is over",</p>
+        <p>"userlink" : "http:\/\/twitter.com\/JRMA421",</p>
+        <p>"favicon" : "http:\/\/www.google.com\/s2\/favicons?domain=twitter.com"</p>
 }, 
 {
-        "type" : "microblogs",
-        "content" : "",
-        "sentiment" : 0,
-        "created_at_client" : "2014/05/28 06:22:20 +0000",
-        "domain" : "twitter.com",
-        "source" : "twitter",
-        "username" : "josegarrido",
-        "userimage" : "http:\/\/pbs.twimg.com\/profile_images\/466074362102030336\/7ccUgUjU_normal.jpeg",
-        "link" : "http:\/\/twitter.com\/andykuzuki\/statuses\/471521834866065408",
-        "description" : "",
-        "id" : 200028633,
-        "term" : "burger king",
-        "title" : "@denkimouse In Spain Burger King has a special menu for the world cup, with little round french fries (noisette potatoes?), it's cute.",
-        "userlink" : "http:\/\/twitter.com\/andykuzuki",
-        "favicon" : "http:\/\/www.google.com\/s2\/favicons?domain=twitter.com"
+        <p>"type" : "microblogs",</p>
+        <p>"content" : "",</p>
+        <p>"sentiment" : 0,</p>
+        <p>"created_at_client" : "2014/05/28 06:22:20 +0000",</p>
+        <p>"domain" : "twitter.com",</p>
+        <p>"source" : "twitter",</p>
+        <p>"username" : "josegarrido",</p>
+        <p>"userimage" : "http:\/\/pbs.twimg.com\/profile_images\/466074362102030336\/7ccUgUjU_normal.jpeg",</p>
+        <p>"link" : "http:\/\/twitter.com\/andykuzuki\/statuses\/471521834866065408",</p>
+        <p>"description" : "",</p>
+        <p>"id" : 200028633,</p>
+        <p>"term" : "burger king",</p>
+        <p>"title" : "@denkimouse In Spain Burger King has a special menu for the world cup, with little round french fries (noisette potatoes?), it's cute.",</p>
+        <p>"userlink" : "http:\/\/twitter.com\/andykuzuki",</p>
+        <p>"favicon" : "http:\/\/www.google.com\/s2\/favicons?domain=twitter.com"</p>
 }, 
 {
-        "type" : "microblogs",
-        "content" : "",
-        "sentiment" : 0,
-        "created_at_client" : "2014/05/28 06:21:58 +0000",
-        "domain" : "twitter.com",
-        "source" : "twitter",
-        "username" : "mariomagro",
-        "userimage" : "http:\/\/pbs.twimg.com\/profile_images\/434462845707628544\/-KkyCUzb_normal.jpeg",
-        "link" : "http:\/\/twitter.com\/VincentWYedlin\/statuses\/471521740775256064",
-        "description" : "",
-        "id" : 200028634,
-        "term" : "burger king",
-        "title" : "\u201c@DebbyRyan: bring a friend; wear a crown.\u201d \u2014You might be too young, but do you remember when you could get a crown at Burger King? ",
-        "userlink" : "http:\/\/twitter.com\/VincentWYedlin",
-        "favicon" : "http:\/\/www.google.com\/s2\/favicons?domain=twitter.com"
+        <p>"type" : "microblogs",</p>
+        <p>"content" : "",</p>
+        <p>"sentiment" : 0,</p>
+        <p>"created_at_client" : "2014/05/28 06:21:58 +0000",</p>
+        <p>"domain" : "twitter.com",</p>
+        <p>"source" : "twitter",</p>
+        <p>"username" : "mariomagro",</p>
+        <p>"userimage" : "http:\/\/pbs.twimg.com\/profile_images\/434462845707628544\/-KkyCUzb_normal.jpeg",</p>
+        <p>"link" : "http:\/\/twitter.com\/VincentWYedlin\/statuses\/471521740775256064",</p>
+        <p>"description" : "",</p>
+        <p>"id" : 200028634,</p>
+        <p>"term" : "burger king",</p>
+        <p>"title" : "\u201c@DebbyRyan: bring a friend; wear a crown.\u201d \u2014You might be too young, but do you remember when you could get a crown at Burger King? ",</p>
+        <p>"userlink" : "http:\/\/twitter.com\/VincentWYedlin",</p>
+        <p>"favicon" : "http:\/\/www.google.com\/s2\/favicons?domain=twitter.com"</p>
 }, 
 {
-        "type" : "microblogs",
-        "content" : "",
-        "sentiment" : 0,
-        "created_at_client" : "2014/05/28 06:21:31 +0000",
-        "domain" : "twitter.com",
-        "source" : "twitter",
-        "username" : "saralopez",
-        "userimage" : "http:\/\/pbs.twimg.com\/profile_images\/451991688685162497\/Of5yjNDD_normal.jpeg",
-        "link" : "http:\/\/twitter.com\/nisichaa\/statuses\/471521630494003200",
-        "description" : "",
-        "id" : 200028635,
-        "term" : "burger king",
-        "title" : "Buang receh",
-        "userlink" : "http:\/\/twitter.com\/nisichaa",
-        "favicon" : "http:\/\/www.google.com\/s2\/favicons?domain=twitter.com"
+        <p>"type" : "microblogs",</p>
+        <p>"content" : "",</p>
+        <p>"sentiment" : 0,</p>
+        <p>"created_at_client" : "2014/05/28 06:21:31 +0000",</p>
+        <p>"domain" : "twitter.com",</p>
+        <p>"source" : "twitter",</p>
+        <p>"username" : "saralopez",</p>
+        <p>"userimage" : "http:\/\/pbs.twimg.com\/profile_images\/451991688685162497\/Of5yjNDD_normal.jpeg",</p>
+        <p>"link" : "http:\/\/twitter.com\/nisichaa\/statuses\/471521630494003200",</p>
+        <p>"description" : "",</p>
+        <p>"id" : 200028635,</p>
+        <p>"term" : "burger king",</p>
+        <p>"title" : "Buang receh",</p>
+        <p>"userlink" : "http:\/\/twitter.com\/nisichaa",</p>
+        <p>"favicon" : "http:\/\/www.google.com\/s2\/favicons?domain=twitter.com"</p>
 }
 ]
 
