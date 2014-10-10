@@ -1,13 +1,31 @@
-#summary One-sentence summary of this page.
+Set sentiment and relevancy for a set of mentions. Make a GET call using basic authentication.
 
-= Introduction =
+*URL:*
 
-Add your content here.
+http://newsocialcloud.com/api/v2/mentions
 
+*HTTP Methods:*
 
-= Details =
+PUT
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*Parameters:*
+
+<p>application_id: Your application id from http://newsocialcloud.com/developers.html</p>
+<p>ids: list of mention ids separated by commas</p>
+<p>sentiment: Optional. 1 for positive, 0 for neutral, -1 for negative</p>
+<p>relevancy: Optional. 1 for relevant, 0 for irrelevant</p>
+
+*Authentication:*
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+*Success Response:*
+
+{"result":"Sentiment Updated"}
+{"result":"Relevancy Updated"}
+{"result":"Sentiment Updated, Relevancy Updated"}
+
+*Error Response:*
+
+{"result":"Error no ID"}
+{"result":"Error no Sentiment or Relevancy"}
