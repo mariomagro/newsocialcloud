@@ -2,7 +2,7 @@ Set sentiment and relevancy for a set of mentions. Make a GET call using basic a
 
 *URL:*
 
-http://newsocialcloud.com/api/v2/mentions
+http://login.newsocialcloud.com/api/v2/mentions
 
 *HTTP Methods:*
 
