@@ -20,7 +20,7 @@ Basic authentication with username and password or remote API key belonging to t
 *Success Response:*
 
 {
-    "responder_avatar": "http://pbs.twimg.com/profile_images/1642138996/Twitter_Icon_normal.jpg",
+    "responder_avatar": http://pbs.twimg.com/profile_images/1642138996/Twitter_Icon_normal.jpg,
     "original_message": null,
     "id": 75297956,
     "service_image": "http://twitter.com/phoenix/favicon.ico",
