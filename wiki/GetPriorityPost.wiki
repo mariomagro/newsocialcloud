@@ -15,79 +15,79 @@ GET
 
 *Authentication:*
 
-Basic authentication with username and password or remote API key belonging to the newsocialcloud user.
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
 
 *Success Response:*
 
 {
-    "responder_avatar": http://pbs.twimg.com/profile_images/1642138996/Twitter_Icon_normal.jpg,
-    "original_message": null,
-    "id": 75297956,
-    "service_image": "http://twitter.com/phoenix/favicon.ico",
-    "message_text": "",
-    "account_avatar": "http://pbs.twimg.com/profile_images/3667750807/0d1114cb36f85b8b49e45bacf9bcc485_normal.png",
-    "uid": "KRSMConsulting",
-    "user_id": 5131,
-    "message_html": "",
-    "responder_fullname": "KRSM Consulting",
-    "post_picture": null,
-    "responder_identifier": "@KRSMConsulting",
-    "account_detail": {
-        "uid": "newsocialcloud",
-        "description": "Twitter",
-        "account": {
+    <p>"responder_avatar": "http://pbs.twimg.com/profile_images/1642138996/Twitter_Icon_normal.jpg",</p>
+    <p>"original_message": null,</p>
+    <p>"id": 75297956,</p>
+    <p>"service_image": "http://twitter.com/phoenix/favicon.ico",</p>
+    <p>"message_text": "",</p>
+    <p>"account_avatar": "http://pbs.twimg.com/profile_images/3667750807/0d1114cb36f85b8b49e45bacf9bcc485_normal.png",</p>
+    <p>"uid": "KRSConsulting",</p>
+    <p>"user_id": 5131,</p>
+    <p>"message_html": "",</p>
+    <p>"responder_fullname": "KRS Consulting",</p>
+    <p>"post_picture": null,</p>
+    <p>"responder_identifier": "@KRSConsulting",</p>
+    <p>"account_detail": {</p>
+        <p>"uid": "newsocialcloud",</p>
+        <p>"description": "Twitter",</p>
+        <p>"account": {</p>
             "service": {
-                "icon": "http://snd-assets.s3.amazonaws.com/icons/somicro/twitter.png",
-                "reply_via_filter": "twitteroauth",
-                "stream_actions": [
+                <p>"icon": "http://snd-assets.s3.amazonaws.com/icons/somicro/twitter.png",</p>
+                <p>"reply_via_filter": "twitteroauth",</p>
+                <p>"stream_actions": [</p>
                     {
-                        "name": "Reply",
-                        "action": "reply",
-                        "can_message": true,
-                        "message_prefix": "@"
+                        <p>"name": "Reply",</p>
+                        <p>"action": "reply",</p>
+                        <p>"can_message": true,</p>
+                        <p>"message_prefix": "@"</p>
                     },
                     {
-                        "name": "DM",
-                        "action": "dm",
-                        "can_message": true,
-                        "message_prefix": "d "
+                        <p>"name": "DM",</p>
+                        <p>"action": "dm",</p>
+                        <p>"can_message": true,</p>
+                        <p>"message_prefix": "d "</p>
                     },
                     {
-                        "name": "Retweet",
-                        "action": "retweet",
-                        "can_message": true,
-                        "message_prefix": "RT @"
+                        <p>"name": "Retweet",</p>
+                        <p>"action": "retweet",</p>
+                        <p>"can_message": true,</p>
+                        <p>"message_prefix": "RT @"</p>
                     },
                     {
-                        "name": "Show%20Conversation",
-                        "action": "sc",
-                        "can_message": false,
-                        "message_prefix": ""
+                        <p>"name": "Show%20Conversation",</p>
+                        <p>"action": "sc",</p>
+                        <p>"can_message": false,</p>
+                        <p>"message_prefix": ""</p>
                     },
                     {
-                        "name": "Favorite",
-                        "action": "favorite",
-                        "can_message": false,
-                        "message_prefix": ""
+                        <p>"name": "Favorite",</p>
+                        <p>"action": "favorite",</p>
+                        <p>"can_message": false,</p>
+                        <p>"message_prefix": ""</p>
                     }
                 ]
             }
         },
-        "picture_url": "http://pbs.twimg.com/profile_images/4354356959669096449/rA7jKuts_normal.png",
-        "url": "http://twitter.com/newsocialcloud",
-        "account_name": "newsocialcloud",
-        "account_id": 500437
+        <p>"picture_url": "http://pbs.twimg.com/profile_images/4354356959669096449/rA7jKuts_normal.png",</p>
+        <p>"url": "http://twitter.com/newsocialcloud",</p>
+        <p>"account_name": "newsocialcloud",</p>
+        <p>"account_id": 500437</p>
     },
-    "url": "http://twitter.com/KRSMConsulting",
-    "account_name": "newsocialcloud",
-    "relative_created_at": "1 month ago",
-    "post_link": null,
-    "isRead": 1,
-    "created_at": "2014/02/13 13:03:16 +0000",
-    "sentiment": 0,
-    "response_type": "Mention",
-    "post_body": "The KRSM Consulting Daily is out! http://t.co/hPYZCB3pRJ Stories via @newsocialcloud @CharlieCurve",
-    "service_name": "twitteroauth",
-    "message_type": "Post",
-    "account_detail_id": 5103
+    <p>"url": "http://twitter.com/KRSMConsulting",</p>
+    <p>"account_name": "newsocialcloud",</p>
+    <p>"relative_created_at": "1 month ago",</p>
+    <p>"post_link": null,</p>
+    <p>"isRead": 1,</p>
+    <p>"created_at": "2014/02/13 13:03:16 +0000",</p>
+    <p>"sentiment": 0,</p>
+    <p>"response_type": "Mention",</p>
+    <p>"post_body": "The KRS Consulting Daily is out! http://t.co/hPYZCB3pRJ Stories via @newsocialcloud @CharlieCure",</p>
+    <p>"service_name": "twitteroauth",</p>
+    <p>"message_type": "Post",</p>
+    <p>"account_detail_id": 5103</p>
 }
