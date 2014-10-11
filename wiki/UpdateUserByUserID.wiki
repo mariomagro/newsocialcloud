@@ -53,7 +53,7 @@ Basic authentication with username and password or remote API key belonging to t
     <p>"is_active": true,</p>
     <p>"fullname": "Test User",</p>
     <p>"api_key": "c48c7db283e1d1b57f1449d1c02d6083b0e1e6a2",</p>
-    <p>"last_login": "2013/09/25 13:59:13 +0000",</p>
+    <p>"last_login": "2014/09/25 13:59:13 +0000",</p>
     <p>"id": 122068,</p>
     <p>"color": "#000000",</p>
     <p>"avatar": "http://www.gravatar.com/avatar/4b13c1a4f17c731280e51faead7bc1f3?s=55&d=http://newsocialcloud.com/images/silhouette.png",</p>
