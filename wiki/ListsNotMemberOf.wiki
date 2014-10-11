@@ -21,13 +21,13 @@ Basic authentication with username and password or remote API key belonging to t
 
 [
     {
-        "color": "#057b79",
-        "list_name": "001_Academy_Newsletter",
-        "user_id": 5131,
-        "consumers": [],
-        "contributors": [],
-        "item_count": 10286,
-        "id": 35529,
-        "list_type": "Mixed"
+        <p>"color": "#057b79",</p>
+        <p>"list_name": "001_Academy_Newsletter",</p>
+        <p>"user_id": 5131,</p>
+        <p>"consumers": [],</p>
+        <p>"contributors": [],</p>
+        <p>"item_count": 10286,</p>
+        <p>"id": 35529,</p>
+        <p>"list_type": "Mixed"</p>
     }
 ]
