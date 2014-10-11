@@ -1,13 +1,33 @@
-#summary One-sentence summary of this page.
+To find all the lists that a service or contact does NOT belong to, make a GET request.
 
-= Introduction =
+*URL:*
 
-Add your content here.
+http://login.newsocialcloud.com/api/v2/lists_not_member_of.json
 
+*HTTP Methods:*
 
-= Details =
+GET
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*Parameters:*
+
+<p>application_id: Your application id from http://newsocialcloud.com/developers.html</p>
+<p>item_id: The recipient_id of the service retrieved from the Services call or the contact_id of a contact.</p>
+
+*Authentication:*
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+*Success Response:*
+
+[
+    {
+        "color": "#057b79",
+        "list_name": "001_Academy_Newsletter",
+        "user_id": 5131,
+        "consumers": [],
+        "contributors": [],
+        "item_count": 10286,
+        "id": 35529,
+        "list_type": "Mixed"
+    }
+]
