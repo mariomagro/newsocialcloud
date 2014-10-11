@@ -1,13 +1,48 @@
-#summary One-sentence summary of this page.
+To search for social profiles on Twitter, Facebook, Instagram or LinkedIn make an authenticated GET request.
 
-= Introduction =
+*URL:*
 
-Add your content here.
+http://login.newsocialcloud.com/api/v2/social_profile_search.json
 
+*HTTP Methods:*
 
-= Details =
+GET
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*Parameters:*
+
+<p>application_id: Your application id from http://newsocialcloud.com/developers.html</p>
+<p>type: One of the following: twitter, linkedin, facebook, instagram.</p>
+<p>q: The name to search for.</p>
+<p>account_id: Optional. The service id, if available for the authenticated user returned by the Services API method. Alternatively, just use null.</p>
+
+*Authentication:*
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+*Success Response:*
+
+{
+    "profiles": [
+        {
+            <p>"profile_id": "606240366",</p>
+            <p>"profile_name": "NewSocialCloud",</p>
+            <p>"bio": "",</p>
+            <p>"last_name": "NewSocialCloud",</p>
+            <p>"profile_picture": "https://graph.facebook.com/172622719582956/picture",</p>
+            <p>"profile_url": "https://www.facebook.com/pages/NewSocialCloud/172622719582956",</p>
+            <p>"location": "",</p>
+            <p>"first_name": "NewSocialCloud"</p>
+        },
+        {
+            <p>"profile_id": "587135622",</p>
+            <p>"profile_name": "Mario Magro",</p>
+            <p>"bio": "",</p>
+            <p>"last_name": "Magro",</p>
+            <p>"profile_picture": "https://graph.facebook.com/mmagroman/picture",</p>
+            <p>"profile_url": "https://www.facebook.com/mmagroman",</p>
+            <p>"location": "",</p>
+            <p>"first_name": "Mario"</p>
+        },
+            ],
+    "account_id": 515290
+}
