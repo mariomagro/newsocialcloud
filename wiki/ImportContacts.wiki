@@ -1,13 +1,25 @@
-#summary One-sentence summary of this page.
+To bulk import contacts make a POST request.
 
-= Introduction =
+*URL:*
 
-Add your content here.
+http://login.newsocialcloud.com/api/v2/import.json
 
+*HTTP Methods:*
 
-= Details =
+POST
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*Parameters:*
+
+<p>application_id: Your application id from http://newsocialcloud.com/developers.html<p>
+<p>payload: The raw CSV data.<p>
+<p>type: Set this to contacts.<p>
+<p>preference: Set this to Email, SMS or Mixed.<p>
+<p>list_id: Optional. Set this to the list id that these contacts will be added to.<p>
+
+*Authentication:*
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+*Success Response:*
+
+{"rows":2,"status":"Processing","id":34739890}
