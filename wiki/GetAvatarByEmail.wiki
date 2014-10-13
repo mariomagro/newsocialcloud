@@ -1,13 +1,23 @@
-#summary One-sentence summary of this page.
+To retrieve an avatar for a given email address, make a GETcall without any authentication.
 
-= Introduction =
+*URL:*
 
-Add your content here.
+http://login.newsocialcloud.com/api/utils/email_avatar.json
 
+*HTTP Methods:*
 
-= Details =
+GET
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*Parameters:*
+
+<p>application_id: Your application id from http://newsocialcloud.com/developers.html</p>
+<p>email: The user's email address.</p>
+default: Optional. If no matching avatar is found, this URL will be refurned as default.</p>
+
+*Authentication:*
+
+None required.
+
+*Success Response:*
+
+{"avatar": ""http://www.gravatar.com/avatar/xxxx.png" }
