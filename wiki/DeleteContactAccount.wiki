@@ -1,13 +1,23 @@
-#summary One-sentence summary of this page.
+To delete contact account information from a contact make a DELETE request.
 
-= Introduction =
+*URL:*
 
-Add your content here.
+http://login.newsocialcloud.com/api/v2/contact_account.json
 
+*HTTP Methods:*
 
-= Details =
+DELETE
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*Parameters:*
+
+<p>application_id: Your application id from http://newsocialcloud.com/developers.html</p>
+<p>contact_id: The contact id.</p>
+<p>contact_account_id: The contact account id.</p>
+
+*Authentication:*
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+*Success Response:*
+
+{"status": "OK" }
