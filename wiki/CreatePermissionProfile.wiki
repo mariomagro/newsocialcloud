@@ -1,13 +1,31 @@
-#summary One-sentence summary of this page.
+To create a new permission profile, make a POST call using basic authentication.
 
-= Introduction =
+*URL:*
 
-Add your content here.
+http://login.newsocialcloud.com/api/v2/permission_profile.json
 
+*HTTP Methods:*
 
-= Details =
+POST
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*Parameters:*
+
+<p>application_id: Your application id from http://newsocialcloud.com/developers.html</p>
+<p>profile_name: The name of the profile.</p>
+<p>permissions: Optional. A comma separated list of permission IDs. This list can be retrieved using the available_permissions API call.</p>
+
+*Authentication:*
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+*Success Response:*
+
+{
+    "profile_name": "Default 3",
+    "id": 4,
+    "permissions": []
+}
+
+*Error Responses:*
+
+{"error": {"type": "MissingParameter", "message": "The profile_name parameter is missing."} }
