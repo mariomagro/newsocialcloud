@@ -21,48 +21,48 @@ Basic authentication with username and password or remote API key belonging to t
 
 {
     "apps": {
-        "in_use": 19,
-        "total_available": 180
+        <p>"in_use": 19,</p>
+        <p>"total_available": 180</p>
     },
     "billing": {
         "plan": {
-            "name": "Premium",
-            "is_trial": false,
-            "monthly_amount": 699.99,
-            "trial_days_remaining": 0
+            <p>"name": "Premium",</p>
+            <p>"is_trial": false,</p>
+            <p>"monthly_amount": 699.99,</p>
+            <p>"trial_days_remaining": 0</p>
         },
-        "users_purchased": 18,
+        <p>"users_purchased": 18,</p>
         "discount": {
-            "annually": 0.1,
-            "quarterly": 0.05,
-            "monthly": 0,
-            "half_yearly": 0.075
+            <p>"annually": 0.1,</p>
+            <p>"quarterly": 0.05,</p>
+            <p>"monthly": 0,</p>
+            <p>"half_yearly": 0.075</p>
         },
-        "amount": 3599.88,
-        "card_expiry_year": 2015,
-        "card_number": "************1234",
-        "card_expiry_month": 5,
+        <p>"amount": 3599.88,</p>
+        <p>"card_expiry_year": 2015,</p>
+        <p>"card_number": "************1234",</p>
+        <p>"card_expiry_month": 5,</p>
         "billing_urls": {
-            "add_users": "***********",
-            "select_plan": "***********",
-            "change_plan": "***********",
-            "change_card": "***********"
+            <p>"add_users": "***********",</p>
+            <p>"select_plan": "***********",</p>
+            <p>"change_plan": "***********",</p>
+            <p>"change_card": "***********"</p>
         },
-        "amount_monthly": 299.99,
-        "currency": "EUR",
-        "cycle": 12,
-        "next_payment": "2015/12/29 01:45:48 +0000",
-       "last_payment": "2013/12/29 01:45:48 +0000",
-        "member_since": "2008/08/07 19:39:06 +0000"
+        <p>"amount_monthly": 299.99,</p>
+        <p>"currency": "EUR",</p>
+        <p>"cycle": 12,</p>
+        <p>"next_payment": "2015/12/29 01:45:48 +0000",</p>
+        <p>"last_payment": "2013/12/29 01:45:48 +0000",</p>
+        <p>"member_since": "2008/08/07 19:39:06 +0000"</p>
     },
     "services": {
-        "in_use": 335,
-        "total_available": 630000
+        <p>"in_use": 335,</p>
+        <p>"total_available": 630000</p>
     },
     "users": {
-        "inactive": 2,
-        "total_available": 18,
-        "active": 17
+        <p>"inactive": 2,</p>
+        <p>"total_available": 18,</p>
+        <p>"active": 17</p>
     }
 }
 
