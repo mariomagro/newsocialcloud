@@ -1,13 +1,30 @@
-#summary One-sentence summary of this page.
+To retrieve a permission profile, make a GET call using basic authentication.
 
-= Introduction =
+*URL:*
 
-Add your content here.
+http://login.newsocialcloud.com/api/v2/permission_profile.json
 
+*HTTP Methods:*
 
-= Details =
+GET
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*Parameters:*
+
+<p>application_id: Your application id from http://newsocialcloud.com/developers.html</p>
+<p>profile_id: The ID of the profile to retrieve.</p>
+
+*Authentication:*
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+*Success Response:*
+
+{
+    <p>"profile_name": "Default 3",</p>
+    <p>"id": 4,</p>
+    <p>"permissions": []</p>
+}
+
+*Error Responses:*
+
+{"error": {"type": "MissingParameter", "message": "The profile_id parameter is missing."} }
