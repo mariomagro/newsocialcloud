@@ -66,7 +66,7 @@ Basic authentication with username and password or remote API key belonging to t
         <p>"mandatory": 1,</p>
         <p>"id": 31656,</p>
         <p>"user_id": 5131,</p>
-        <p>"field_options": "Madrid\Spain",</p>
+        <p>"field_options": "Madrid\Barcelona",</p>
         <p>"field_type": "list",</p>
         <p>"field_name": "location",</p>
         <p>"field_title": "Location"</p>
