@@ -21,9 +21,9 @@ Basic authentication with username and password or remote API key belonging to t
 *Success Response:*
 
 {
-    "profile_name": "Default 3",
-    "id": 4,
-    "permissions": []
+    <p>"profile_name": "Default 3",</p>
+    <p>"id": 4,</p>
+    <p>"permissions": []</p>
 }
 
 *Error Responses:*
