@@ -24,14 +24,14 @@ Basic authentication with username and password or remote API key belonging to t
     {
         <p>"created_at": "2014/04/27 16:03:02 +0000",</p>
         <p>"category": "user",</p>
-        <p>"whitelabel": "newsocialcloud Team",</p>
+        <p>"whitelabel": "NewSocialCloud Team",</p>
         <p>"updated_at": "2014/04/27 16:03:02 +0000",</p>
         <p>"field_value": "",</p>
         <p>"sort_order": 1,</p>
         <p>"mandatory": 1,</p>
         <p>"id": 32772,</p>
         <p>"user_id": 5131,</p>
-        <p>"field_options": "New York\nLos Angeles",</p>
+        <p>"field_options": "London\United Kingdom",</p>
         <p>"field_type": "list",</p>
         <p>"field_name": "city",</p>
         <p>"field_title": "City"</p>
@@ -39,7 +39,7 @@ Basic authentication with username and password or remote API key belonging to t
     {
         <p>"created_at": "2014/04/19 12:35:03 +0000",</p>
         <p>"category": "user",</p>
-        <p>"whitelabel": "newsocialcloud Team",</p>
+        <p>"whitelabel": "NewSocialCloud Team",</p>
         <p>"updated_at": "2014/04/19 12:35:03 +0000",</p>
         <p>"field_value": "",</p>
         <p>"sort_order": 1,</p>
