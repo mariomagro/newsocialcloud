@@ -1,13 +1,78 @@
-#summary One-sentence summary of this page.
+To post an action (e.g. like an item), make a GET call using basic authentication.
 
-= Introduction =
+*URL:*
 
-Add your content here.
+http://login.newsocialcloud.com/api/v0/post-action.json
 
+*HTTP Methods:*
 
-= Details =
+GET
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*Parameters:*
+
+<p>application_id: Your application id from http://newsocialcloud.com/developers.html</p>
+<p>event: The event to execute. Use the action field retrieved from within stream-actions that is returned by the GetStreamAccounts call.</p>
+<p>account_id: The account ID for this stream.</p>
+<p>handle: The unique identifier for this stream or profile. This is returned by the GetStream call in the id field.</p>
+<p>comment: The comment to be posted. Only include when the stream-action has can_message of true.</p>
+
+*Authentication:*
+
+Basic authentication with username and password or remote API key belonging to the newsocialcloud user.
+
+*Success Response:*
+
+{"result": "OK"}
+
+OR (for comments):
+
+{
+    "messages": [
+        {
+            "comments": [
+                {
+                    <p>"id": "151591754888713_352403964807490_4027406",</p>
+                    <p>"editable": false,</p>
+                    <p>"commenter": "London Daily Deals",</p>
+                    <p>"commenter_pic": "http://graph.facebook.com/151591754888713/picture",</p>
+                    <p>"uid": "151591754888713",</p>
+                    <p>"message": "Test",</p>
+                    <p>"date": "24 Apr 22:24"</p>
+                }
+            ],
+            <p>"comment_count": 1,</p>
+            <p>"editable": false,</p>
+            <p>"likes": 0,</p>
+            <p>"id": "151591754888713_352403964807490",</p>
+            <p>"profile_id": "0",</p>
+            <p>"uid": "151591754888713",</p>
+            <p>"picture": "http://platform.ak.fbcdn.net/www/app_full_proxy.php?app=26065877776&v=1&size=z&cksum=e17a38410270b4eda01bf266c3fa645c&src=http%3A%2F%2Fstatic-www.kgbdeals.co.uk%2Fdeals%2FGB%2F100411%2F100411_s287x183_3.jpg",</p>
+            <p>"link": "http://www.kgbdeals.co.uk/london/deals/101611",</p>
+            <p>"account_id": 99579,</p>
+            "info": {
+                <p>"isRead": 0,</p>
+                <p>"id": 520412,</p>
+                <p>"isHighlighted": 0</p>
+            },
+            "link_block": "%3Ctable%20style=%22padding-top:5px;%22%3E%3Ctr%3E%3Ctd%20style=%22border:0;%22%20valign=%22top%22%3E%3Ca%20href=%22http://www.kgbdeals.co.uk/london/deals/101611%22%20target=%22_blank%22%3E%3Cimg%20src=%22http://platform.ak.fbcdn.net/www/app_full_proxy.php?app=26065877776&v=1&size=z&cksum=e17a38410270b4eda01bf266c3fa645c&src=http%253A%252F%252Fstatic-www.kgbdeals.co.uk%252Fdeals%252FGB%252F100411%252F100411_s287x183_3.jpg%22%20style=%22max-width:90px;border:0;%22/%3E%3C/a%3E%3C/td%3E%3Ctd%20style=%22border:0;%22%20valign=%22top%22%3E%3Ctable%20%3E%3Ctr%3E%3Ctd%20style=%22border:0;%22%3E%3Ca%20href=%22http://www.kgbdeals.co.uk/london/deals/101611%22%20target=%22_blank%22%3ETwo%20tickets%20to%20Grand%20Designs%20%E2%80%93%20Grand%20Designs%202012%20%E2%80%93%20London%20-%20kgbdeals%3C/a%3E%3C/td%3E%3C/tr%3E%3Ctr%3E%3Ctd%20style=%22border:0;%22%3E%3Cspan%20class=%22faded%22%3Ewww.kgbdeals.co.uk%3C/span%3E%3C/td%3E%3C/tr%3E%3Ctr%3E%3Ctd%20style=%22border:0;%22%3E%C2%A314%20for%20two%20weekend%20tickets%20to%20Grand%20Designs%20Live%202012%20in%20Docklands%20worth%20up%20to%20%C2%A331.60%20%E2%80%93%20save%20up%20to%2056%25%20for%20a%20wealth%20of%20refit%20tips!%3C/td%3E%3C/tr%3E%3C/table%20%3E%3C/td%3E%3C/tr%3E%3C/table%3E",
+            "message": "%3Ca%20href=%22%23%22%20onclick=%22new%20Streams().loadProfile('151591754888713',%2099579,%20'facebook');%20%20%20return%20false;%22%3E%3Cb%3ELondon%20Daily%20Deals%3C/b%3E%3C/a%3E %C2%A314%20for%20two%20weekend%20tickets%20to%20Grand%20Designs%20Live%202012%20in%20Docklands%20worth%20up%20to%20%C2%A331.60%20%E2%80%93%20save%20up%20to%2056%25%20for%20a%20wealth%20of%20refit%20tips!",
+            "message_unformatted": "%C2%A314%20for%20two%20weekend%20tickets%20to%20Grand%20Designs%20Live%202012%20in%20Docklands%20worth%20up%20to%20%C2%A331.60%20%E2%80%93%20save%20up%20to%2056%25%20for%20a%20wealth%20of%20refit%20tips!",
+            "message_formatted": "%3Ca%20href=%22%23%22%20onclick=%22new%20Streams().loadProfile('151591754888713',%2099579,%20'facebook');%20%20%20return%20false;%22%3E%3Cb%3ELondon%20Daily%20Deals%3C/b%3E%3C/a%3E %C2%A314%20for%20two%20weekend%20tickets%20to%20Grand%20Designs%20Live%202012%20in%20Docklands%20worth%20up%20to%20%C2%A331.60%20%E2%80%93%20save%20up%20to%2056%25%20for%20a%20wealth%20of%20refit%20tips!",
+            "screen_name": "London%20Daily%20Deals",
+            "subject": "%3Ca%20href=%22%23%22%20onclick=%22new%20Streams().loadProfile('151591754888713',%2099579,%20'facebook');%20%20%20return%20false;%22%3E%3Cb%3ELondon%20Daily%20Deals%3C/b%3E%3C/a%3E %C2%A314%20for%20two%20weekend%20tickets%20to%20Grand%20Designs%20Live%202012%20in%20Docklands%20worth%20up%20to%20%C2%A331.60%20%E2%80%93%20save%20up%20to%2056%25%20for%20a%20wealth%20of%20refit%20tips!",
+            "subject_formatted": "%3Ca%20href=%22%23%22%20onclick=%22new%20Streams().loadProfile('151591754888713',%2099579,%20'facebook');%20%20%20return%20false;%22%3E%3Cb%3ELondon%20Daily%20Deals%3C/b%3E%3C/a%3E %C2%A314%20for%20two%20weekend%20tickets%20to%20Grand%20Designs%20Live%202012%20in%20Docklands%20worth%20up%20to%20%C2%A331.60%20%E2%80%93%20save%20up%20to%2056%25%20for%20a%20wealth%20of%20refit%20tips!",
+            "subject_unformatted": "%C2%A314%20for%20two%20weekend%20tickets%20to%20Grand%20Designs%20Live%202012%20in%20Docklands%20worth%20up%20to%20%C2%A331.60%20%E2%80%93%20save%20up%20to%2056%25%20for%20a%20wealth%20of%20refit%20tips!",
+            "avatar": "https://graph.facebook.com/151591754888713/picture",
+            "formattedClientTimeLong": "24 Apr 22:11"
+        }
+    ],
+    <p>"editable": false,</p>
+    <p>"type": "facebook"</p>
+}
+
+*Error Response:*
+
+<error>
+<type>InvalidUsernamePassword</type>
+<message>Username/password is invalid.</message>
+</error>
