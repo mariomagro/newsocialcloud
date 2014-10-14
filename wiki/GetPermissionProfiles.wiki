@@ -1,13 +1,30 @@
-#summary One-sentence summary of this page.
+To retrieve all available permission profiles make a GET call using basic authentication.
 
-= Introduction =
+*URL:*
 
-Add your content here.
+http://login.newsocialcloud.com/api/v2/permission_profiles.json
 
+*HTTP Methods:*
 
-= Details =
+GET
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*Parameters:*
+
+application_id: Your application id from http://newsocialcloud.com/developers.html
+
+*Authentication:*
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+*Success Response:*
+
+[
+    {
+        "profile_name": "Default",
+        "id": 2
+    },
+    {
+        "profile_name": "Default 2",
+        "id": 3
+    }
+]
