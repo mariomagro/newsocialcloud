@@ -1,13 +1,52 @@
-#summary One-sentence summary of this page.
+To retrieve a list of the user's strean account details, make a GET call using basic authentication.
 
-= Introduction =
+*URL:*
 
-Add your content here.
+http://login.newsocialcloud.com/api/v1/stream-accounts.json
 
+*HTTP Methods:*
 
-= Details =
+GET
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*Parameters:*
+
+application_id: Your application id from http://newsocialcloud.com/developers.html
+
+*Authentication:*
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+*Success Response:*
+
+[
+    {
+        <p>"description": "Microsoft Corporation",</p>
+        <p>"id": 239937,</p>
+        "service": {
+            <p>"description": "Monitor Twitter for search terms.",</p>
+            <p>"icon": "http://twitter.com/phoenix/favicon.ico",</p>
+            <p>"id": 1495,</p>
+            <p>"title": "Twitter Search",
+            "stream_actions": [
+                {
+                    <p>"name": "Reply",</p>
+                    <p>"action": "reply",</p>
+                    <p>"can_message": true,</p>
+                    <p>"message_prefix": "@"</p>
+                },
+                {
+                    <p>"name": "DM",</p>
+                    <p>"action": "dm",</p>
+                    <p>"can_message": true,</p>
+                    <p>"message_prefix": "d "</p>
+                },
+                {
+                    <p>"name": "Retweet",</p>
+                    <p>"action": "retweet",</p>
+                    <p>"can_message": true,</p>
+                    <p>"message_prefix": "RT @"</p>
+                }
+            ]
+        }
+    }
+]
