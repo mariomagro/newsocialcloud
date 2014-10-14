@@ -1,13 +1,29 @@
-#summary One-sentence summary of this page.
+To delete an existing user, make a DELETE call using basic authentication.
 
-= Introduction =
+*URL:*
 
-Add your content here.
+http://login.newsocialcloud.com/api/v2/user.json
 
+*HTTP Methods:*
 
-= Details =
+DELETE
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+*Parameters:*
+
+<p>application_id: Your application id from http://newsocialcloud.com/developers.html</p>
+<p>user_id: The ID of the user to update.</p>
+<p>user_api_key: The API key of the user to update.</p>
+
+*Authentication:*
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+*Success Response:*
+
+{
+    "status": "OK",
+}
+
+*Error Responses:*
+
+{"error": {"type": "NotFound", "message": The user could not be found."} }
