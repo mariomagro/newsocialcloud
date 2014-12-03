@@ -7,9 +7,13 @@ HTTP Methods:
 GET
 
 Parameters:
+
 application_id: Your application id from http://newsocialcloud.com/developers
+
 type: Optional. all, owner, contributor or consumer.
+
 Authentication:
+
 Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
 
 Success Response:
