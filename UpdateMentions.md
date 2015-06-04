@@ -1,0 +1,31 @@
+Set sentiment and relevancy for a set of mentions. Make a GET call using basic authentication.
+
+**URL:**
+
+http://login.newsocialcloud.com/api/v2/mentions
+
+**HTTP Methods:**
+
+PUT
+
+**Parameters:**
+
+<p>application_id: Your application id from <a href='http://newsocialcloud.com/developers.html'>http://newsocialcloud.com/developers.html</a></p>
+<p>ids: list of mention ids separated by commas</p>
+<p>sentiment: Optional. 1 for positive, 0 for neutral, -1 for negative</p>
+<p>relevancy: Optional. 1 for relevant, 0 for irrelevant</p>
+
+**Authentication:**
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+**Success Response:**
+
+{"result":"Sentiment Updated"}
+{"result":"Relevancy Updated"}
+{"result":"Sentiment Updated, Relevancy Updated"}
+
+**Error Response:**
+
+{"result":"Error no ID"}
+{"result":"Error no Sentiment or Relevancy"}

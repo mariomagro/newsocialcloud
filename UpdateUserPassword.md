@@ -1,0 +1,44 @@
+To update a user's password, make a PUT call using basic authentication.
+
+**URL:**
+
+http://login.newsocialcloud.com/api/v2/user_password.json
+
+**HTTP Methods:**
+
+PUT
+
+**Parameters:**
+
+<p>application_id: Your application id from <a href='http://newsocialcloud.com/developers.html'>http://newsocialcloud.com/developers.html</a></p>
+<p>user_id: The ID of the user to update.</p>
+<p>user_api_key: The API key of the user to update.</p>
+<p>current_password: Optional. The user's current password. Used when a user is changing their own password.</p>
+<p>new_password: The user's new password.</p>
+
+**Authentication:**
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+**Success Response:**
+
+{
+> <p>"profile": "Team Member",</p>
+> <p>"lineage": "12268",</p>
+> <p>"is_active": true,</p>
+> <p>"fullname": "Test User",</p>
+> <p>"api_key": "c48c7db283e1d1b571449d1c02d6083b0e1e6a2",</p>
+> <p>"last_login": "2014/09/25 13:59:13 +0000",</p>
+> <p>"id": 122068,</p>
+> <p>"color": "#000000",</p>
+> <p>"avatar": "<img src='http://www.gravatar.com/avatar/4b13c1a4f17c731280e51faead7bc1f3?s=55&d=http://newsocialcloud.com/images/silhouette.png' />",</p>
+> <p>"user_status": "Active (Premium)",</p>
+> <p>"parent_user_id": null,</p>
+> <p>"login": "xpxaaaaaa",</p>
+> <p>"email": "infobbbaaa123@newsocialcloud.com"</p>
+}
+
+**Error Responses:**
+
+{"error": {"type": "NotFound", "message": "The user could not be found."} }
+{"error": {"type": "InvalidPassword", "message": "Previous password does not match."} }

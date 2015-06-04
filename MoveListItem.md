@@ -1,0 +1,26 @@
+To move an item from one list to another, make a POST call using basic authentication.
+
+**URL:**
+
+http://login.newsocialcloud.com/api/v2/list_move.json
+
+**HTTP Methods:**
+
+POST
+
+**Parameters:**
+
+<p>application_id: Your application id from <a href='http://newsocialcloud.com/developers.html'>http://newsocialcloud.com/developers.html</a></p>
+<p>list_from_id: The id of the list to move this item from.</p>
+<p>list_to_id: The id of the list to move this item into.</p>
+<p>item_id: The id of the service to be moved.</p>
+
+**Authentication:**
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+**Success Response:**
+
+{
+> "status": "OK"
+}

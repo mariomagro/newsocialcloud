@@ -1,0 +1,100 @@
+To update an existing account for a given service, make a PUT request to this API endpoint.
+
+**URL:**
+
+http://login.newsocialcloud.com/api/v2/account.json
+
+**HTTP Methods:**
+
+PUT
+
+**Authentication:**
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+**Parameters:**
+
+<p>application_id: Your application id from <a href='http://newsocialcloud.com/developers.html'>http://newsocialcloud.com/developers.html</a></p>
+<p>account_id: The id of the account to be update.</p>
+<p>description: The name/description of this account. This should usually be the username/description of the account for this service.</p>
+<p>parameters: A JSON object representing the populated parameter names and values for this service. Parameters are retrieved using GetServiceParameters. The format of this JSON object is<br>
+[<br>
+<blockquote>{<br>
+<blockquote><p>"parameter_name": "SampleName1",</p>
+<p>"parameter_value": "SampleValue1"</p>
+</blockquote>},<br>
+{<br>
+<blockquote><p>"parameter_name": "SampleName2",</p>
+<p>"parameter_value": "SampleValue2"</p>
+</blockquote>}</blockquote>
+
+]<br>
+</p>
+**Success Response**
+
+{
+> "properties": {
+> > <p>"token_secret": "VmsbBuS37133PKLOM1INIvAFgkdaXojuYesPNaxRgaqAF",</p>
+> > <p>"username": "GavinHammar",</p>
+> > <p>"token": "292943066-s5vEpMSFlt3aZFFhXY5nKrg5FuN5iloGRQvUEhez",</p>
+> > <p>"notify": "Priority Inbox Only"</p>
+
+> },
+> <p>"propertyOverride": "username=newsocialcloud,token=29294066-s5vEpMSFlt3aZFFhXY5nKrgFuN5iloGRQvUEhez,token_secret=VmsbBuS37133PLOM1INIvAFgkdaXojuYesPNaxRgaqAF,notify=Priority Inbox Only",</p>
+> <p>"id": 71926,</p>
+> <p>"username": "newsocialcloud",</p>
+> <p>"sender_type": "twitteroauth",</p>
+> "service": {
+> > "parameters": [
+> > > {
+> > > > <p>"post_description": null,</p>
+> > > > <p>"id": 3,</p>
+> > > > <p>"category": "config",</p>
+> > > > <p>"parameter_type": "text",</p>
+> > > > <p>"parameter_name": "username",</p>
+> > > > <p>"parameter_description": "Username or Email",</p>
+> > > > <p>"options": null</p>
+
+> > > },
+> > > {
+> > > > <p>"post_description": "This will be automatically populated.",</p>
+> > > > <p>"id": 50,</p>
+> > > > <p>"category": "config",</p>
+> > > > <p>"parameter_type": "hidden",</p>
+> > > > <p>"parameter_name": "token",</p>
+> > > > <p>"parameter_description": "Oauth Token",</p>
+> > > > <p>"options": null</p>
+
+> > > },
+> > > {
+> > > > <p>"post_description": null,</p>
+> > > > <p>"id": 132,</p>
+> > > > <p>"category": "config",</p>
+> > > > <p>"parameter_type": "hidden",</p>
+> > > > <p>"parameter_name": "token_secret",</p>
+> > > > <p>"parameter_description": "Oauth Token Secret",</p>
+> > > > <p>"options": null</p>
+
+> > > },
+> > > {
+> > > > <p>"post_description": "Receive alerts whenever there is new activity on this account.",</p>
+> > > > <p>"id": 12994,</p>
+> > > > <p>"category": "config",</p>
+> > > > <p>"parameter_type": "list",</p>
+> > > > <p>"parameter_name": "notify",</p>
+> > > > <p>"parameter_description": "Receive alerts for new activity",</p>
+> > > > <p>"options": "Priority Inbox Only,Priority Inbox and Email,Email Only,None"</p>
+
+> > > }
+
+> > ],
+> > <p>"id": 46,</p>
+> > <p>"compose_parameters": <a href='.md'>.md</a>,</p>
+> > "category": {
+> > > <p>"category_name": "Social Media Publishing Services",</p>
+> > > <p>"is_rich_text": false</p>
+
+> > }
+
+> }
+}

@@ -1,0 +1,131 @@
+Retrieves a list of the authenticated user's contacts.
+
+**URL:**
+
+http://login.newsocialcloud.com/api/v2/contacts.json
+
+**HTTP Methods:**
+
+GET
+
+**Parameters:**
+
+<p>application_id: Your application id from <a href='http://newsocialcloud.com/developers.html'>http://newsocialcloud.com/developers.html</a></p>
+<p>filter: Optional. A JSON string in the following format:</p>
+{
+> <p>"contains": "",</p>
+> <p>"owner_id": "1,2",</p>
+> <p>"created_after": "2014-01-01",</p>
+> <p>"created_before": "2020-12-21",</p>
+> <p>"contact_type", "Lead",</p>
+> "custom\_fields": [
+> > {
+> > > <p>"name": "age",</p>
+> > > <p>"operator": "<",</p>
+> > > <p>"value": 12</p>
+
+
+
+> }
+> ]
+}
+
+<p>Please note:</p>
+
+<p>- owner_id can consist of a comma separated list of user ID's,</p>
+
+<p>- contact_type can be Lead, Account or Opportunity.</p>
+
+<p>contact_info Optional. Only contacts with this contact information is returned. Valid values are: email, SMS or mixed.</p>
+<p>per_page: Optional. The number of contacts to return per page. Maximum is 1000.</p>
+<p>page: Optional. The page number to return.</p>
+
+**Authentication:**
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+**Success Response:**
+
+[
+> {
+> > <p>"image_url": "<img src='http://newsocialcloud-public.s3.amazonaws.com/images/silhouette.gif' />",</p>
+> > <p>"id": 10831941,</p>
+> > <p>"first_name": "carpas",</p>
+> > <p>"last_name": "missvalles",</p>
+> > <p>"full_name": "carpas missvalles",</p>
+> > <p>"firstName": "carpas",</p>
+> > <p>"lastName": "missvalles",</p>
+> > <p>"preference": "Email",</p>
+> > <p>"email": "aaaa@xxxx.com",</p>
+> > <p>"company": "",</p>
+> > <p>"occupation": "",</p>
+> > <p>"birthday": "",</p>
+> > <p>"cellphone": "",</p>
+> > <p>"tel": "",</p>
+> > <p>"fax": "",</p>
+> > <p>"sex": "",</p>
+> > <p>"city": "",</p>
+> > <p>"addressline1": "",</p>
+> > <p>"addressline2": "",</p>
+> > <p>"country": "",</p>
+> > <p>"state": "",</p>
+> > <p>"zip": "",</p>
+> > <p>"unsubscribed": 0,</p>
+> > <p>"accounts": <a href='.md'>.md</a></p>
+
+> },
+> {
+> > <p>"image_url": "<img src='http://newsocialcloud-public.s3.amazonaws.com/images/silhouette.gif' />",</p>
+> > <p>"id": 10675039,</p>
+> > <p>"first_name": "Sara",</p>
+> > <p>"last_name": "López",</p>
+> > <p>"full_name": "Sara López",</p>
+> > <p>"firstName": "Sara",</p>
+> > <p>"lastName": "López",</p>
+> > <p>"preference": "Email",</p>
+> > <p>"email": "Sara@xxxxcom",</p>
+> > <p>"company": "",</p>
+> > <p>"occupation": "",</p>
+> > <p>"birthday": "",</p>
+> > <p>"cellphone": "",</p>
+> > <p>"tel": "",</p>
+> > <p>"fax": "",</p>
+> > <p>"sex": "",</p>
+> > <p>"city": "",</p>
+> > <p>"addressline1": "",</p>
+> > <p>"addressline2": "",</p>
+> > <p>"country": "",</p>
+> > <p>"state": "",</p>
+> > <p>"zip": "",</p>
+> > <p>"unsubscribed": 0,</p>
+> > <p>"accounts": <a href='.md'>.md</a></p>
+
+> },
+> {
+> > <p>"image_url": "<img src='http://newsocialcloud-public.s3.amazonaws.com/images/silhouette.gif' />",</p>
+> > <p>"id": 10586692,</p>
+> > <p>"first_name": "Panda",</p>
+> > <p>"last_name": "Ta",</p>
+> > <p>"full_name": "Panda Ta",</p>
+> > <p>"firstName": "Panda",</p>
+> > <p>"lastName": "Ta",</p>
+> > <p>"preference": "Email",</p>
+> > <p>"email": "ngan_ta2001@xxxx.com",</p>
+> > <p>"company": "",</p>
+> > <p>"occupation": "",</p>
+> > <p>"birthday": "",</p>
+> > <p>"cellphone": "",</p>
+> > <p>"tel": "",</p>
+> > <p>"fax": "",</p>
+> > <p>"sex": "",</p>
+> > <p>"city": "",</p>
+> > <p>"addressline1": "",</p>
+> > <p>"addressline2": "",</p>
+> > <p>"country": "",</p>
+> > <p>"state": "",</p>
+> > <p>"zip": "",</p>
+> > <p>"unsubscribed": 0,</p>
+> > <p>"accounts": <a href='.md'>.md</a></p>
+
+> }
+]

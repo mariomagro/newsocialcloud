@@ -1,0 +1,33 @@
+Translate text to the specified language. Returns content as plain text, not in JSON format.
+
+**URL:**
+
+http://login.newsocialcloud.com/api/v0/translate
+
+**HTTP Methods:**
+
+GET
+
+**Authentication:**
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+**Parameters:**
+
+<p>application_id: Your application id from <a href='http://newsocialcloud.com/developers.html'>http://newsocialcloud.com/developers.html</a></p>
+<p>text: The text to be translated.</p>
+<p>lang: The language code to translate into. E.g. en</p>
+
+**Success Response:**
+
+This is the text translated.
+
+**Error Response:**
+
+{
+> "error": {
+> > <p>"type": "InvalidHTTPMethod",</p>
+> > <p>"message": "PUTisinvalidforthisendpoint."</p>
+
+> }
+}

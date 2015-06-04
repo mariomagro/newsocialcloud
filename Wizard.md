@@ -1,0 +1,35 @@
+To update the wizard status, make a POST call using basic authentication.
+
+**URL:**
+
+http://login.newsocialcloud.com/api/v2/wizard.json
+
+**HTTP Methods:**
+
+POST
+
+**Parameters:**
+
+<p>application_id: Your application id from <a href='http://newsocialcloud.com/developers.html'>http://newsocialcloud.com/developers.html</a></p>
+<p>step: The step of the wizard. Set this to complete once the wizard has been processed.</p>
+<p>Other options are step_1, step_2, complete.</p>
+
+<p>Include these parameters:</p>
+
+If step is step\_1
+<p>business_name: The name of the business.</p>
+<p>timezone: The timezone offset value.</p>
+<p>timezone_name: The name of the timezone.</p>
+If step is step\_2
+<p>industry_name: The name of the industry.</p>
+<p>competitors: A pipe separated list of competitor names. (e.g. pepsi|coke|sprite)</p>
+If step is complete
+No other parameters are needed.
+
+**Authentication:**
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+**Success Response:**
+
+{"status": "OK"}

@@ -1,0 +1,121 @@
+To retrieve the sentiment for a mention term. Make a GET call using basic authentication.
+
+**URL:**
+
+http://login.newsocialcloud.com/api/v2/sentiment
+
+**HTTP Methods:**
+
+GET
+
+**Parameters:**
+
+<p>application_id: Your application id from <a href='http://newsocialcloud.com/developers.html'>http://newsocialcloud.com/developers.html</a></p>
+<p>account_id: One or more mention terms ID, retrieved using the GetMentionTerms call. Can have more than one mention by separating the mentions by commas.</p>
+
+**Authentication:**
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+**Success Response:**
+
+[
+{
+> <p>"type" : "microblogs",</p>
+> <p>"content" : "",</p>
+> <p>"sentiment" : 0,</p>
+> <p>"created_at_client" : "2014/05/28 06:22:27 +0000",</p>
+> <p>"domain" : "twitter.com",</p>
+> <p>"source" : "twitter",</p>
+> <p>"username" : "angelortega",</p>
+> <p>"userimage" : "http:\/\/pbs.twimg.com\/profile_image\/47151445818445248\/JTgQH4v3_normal.jpeg",</p>
+> <p>"link" : "http:\/\/twitter.com\/JRMA421\/statuses\/47152186973852161",</p>
+> <p>"description" : "",</p>
+> <p>"id" : 200028632,</p>
+> <p>"term" : "burger king",</p>
+> <p>"title" : "RT @ckdys22: burger king is closed life is over",</p>
+> <p>"userlink" : "http:\/\/twitter.com\/ckdys22",</p>
+> <p>"favicon" : "http:\/\/www.google.com\/s2\/favicons?domain=twitter.com"</p>
+},
+{
+> <p>"type" : "microblogs",</p>
+> <p>"content" : "",</p>
+> <p>"sentiment" : 0,</p>
+> <p>"created_at_client" : "2014/05/28 06:22:20 +0000",</p>
+> <p>"domain" : "twitter.com",</p>
+> <p>"source" : "twitter",</p>
+> <p>"username" : "josegarrido",</p>
+> <p>"userimage" : "http:\/\/pbs.twimg.com\/profile_image\/46607436202030336\/7ccUgUjU_normal.jpeg",</p>
+> <p>"link" : "http:\/\/twitter.com\/andykuzuki\/statuses\/47152134866065408",</p>
+> <p>"description" : "",</p>
+> <p>"id" : 200028633,</p>
+> <p>"term" : "burger king",</p>
+> <p>"title" : "@denkihouse In Spain Burger King has a special menu for the world cup, with little round french fries (noisette potatoes?), it's cute.",</p>
+> <p>"userlink" : "http:\/\/twitter.com\/denkihouse",</p>
+> <p>"favicon" : "http:\/\/www.google.com\/s2\/favicons?domain=twitter.com"</p>
+},
+{
+> <p>"type" : "microblogs",</p>
+> <p>"content" : "",</p>
+> <p>"sentiment" : 0,</p>
+> <p>"created_at_client" : "2014/05/28 06:21:58 +0000",</p>
+> <p>"domain" : "twitter.com",</p>
+> <p>"source" : "twitter",</p>
+> <p>"username" : "mariomagro",</p>
+> <p>"userimage" : "http:\/\/pbs.twimg.com\/profile_image\/43446284707628544\/-KkyCUzb_normal.jpeg",</p>
+> <p>"link" : "http:\/\/twitter.com\/VincentWYedlin\/statuses\/47152174075256064",</p>
+> <p>"description" : "",</p>
+> <p>"id" : 200028634,</p>
+> <p>"term" : "burger king",</p>
+> <p>"title" : "\u201c@Debbyan: bring a friend; wear a crown.\u201d \u2014You might be too young, but do you remember when you could get a crown at Burger King? ",</p>
+> <p>"userlink" : "http:\/\/twitter.com\/Vincentlin",</p>
+> <p>"favicon" : "http:\/\/www.google.com\/s2\/favicons?domain=twitter.com"</p>
+},
+{
+> <p>"type" : "microblogs",</p>
+> <p>"content" : "",</p>
+> <p>"sentiment" : 0,</p>
+> <p>"created_at_client" : "2014/05/28 06:21:31 +0000",</p>
+> <p>"domain" : "twitter.com",</p>
+> <p>"source" : "twitter",</p>
+> <p>"username" : "saralopez",</p>
+> <p>"userimage" : "http:\/\/pbs.twimg.com\/profile_image\/45199168685162497\/Of5yjNDD_normal.jpeg",</p>
+> <p>"link" : "http:\/\/twitter.com\/nisichaa\/statuses\/4752163494003200",</p>
+> <p>"description" : "",</p>
+> <p>"id" : 200028635,</p>
+> <p>"term" : "burger king",</p>
+> <p>"title" : "Buang receh",</p>
+> <p>"userlink" : "http:\/\/twitter.com\/nisihaa",</p>
+> <p>"favicon" : "http:\/\/www.google.com\/s2\/favicons?domain=twitter.com"</p>
+}
+]
+
+**Error Response:**
+
+
+
+&lt;error&gt;
+
+
+
+
+&lt;type&gt;
+
+InvalidUsernamePassword
+
+&lt;/type&gt;
+
+
+
+
+&lt;message&gt;
+
+Username/password is invalid.
+
+&lt;/message&gt;
+
+
+
+
+&lt;/error&gt;
+

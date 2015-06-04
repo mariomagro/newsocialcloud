@@ -1,0 +1,50 @@
+To retrieve a user's purchased add-ons, make an authenticated GET request.
+
+**URL:**
+
+http://login.newsocialcloud.com/api/v2/add_ons.json
+
+**HTTP Methods:**
+
+GET
+
+**Authentication:**
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+**Parameters:**
+
+application\_id: Your application id from http://newsocialcloud.com/developers.html
+
+**Success Response:**
+
+[
+> {
+> > <p>"amount": 0,</p>
+> > <p>"sms_price_id": 302,</p>
+> > <p>"id": 820,</p>
+> > <p>"currency": "",</p>
+> > <p>"created_at": "2014/06/26 18:06:49 +0000",</p>
+> > <p>"user_id": 115727,</p>
+> > <p>"frequency": 0,</p>
+> > <p>"item_name": "Rebranding - via GetSync'd",</p>
+> > <p>"completed": 1,</p>
+> > <p>"updated_at": "2014/06/26 18:06:49 +0000",</p>
+> > <p>"notes": "Rebranding: via GetSync'd, Website: <a href='http://www.getsyncd.com'>http://www.getsyncd.com</a>, User_id: 115727"</p>
+
+> },
+> {
+> > <p>"amount": 0,</p>
+> > <p>"sms_price_id": 263,</p>
+> > <p>"id": 434,</p>
+> > <p>"currency": "",</p>
+> > <p>"created_at": "2014/09/16 14:43:30 +0000",</p>
+> > <p>"user_id": 96391,</p>
+> > <p>"frequency": 0,</p>
+> > <p>"item_name": "Rebranding - via NewSocialCloud",</p>
+> > <p>"completed": 1,</p>
+> > <p>"updated_at": "2014/09/16 14:43:30 +0000",</p>
+> > <p>"notes": "Rebranding: via NewSocialCloud, Website: <a href='https://www.facebook.com/pages/NewSocialCloud/172622719582956'>https://www.facebook.com/pages/NewSocialCloud/172622719582956</a>, User_id: 96391"</p>
+
+> }
+]

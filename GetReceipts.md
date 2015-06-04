@@ -1,0 +1,79 @@
+To retrieve receipts for an account make a GET request.
+
+**URL:**
+
+http://login.newsocialcloud.com/api/v2/receipts.json
+
+**HTTP Methods:**
+
+GET
+
+**Parameters:**
+
+<p>application_id: Your application id from <a href='http://newsocialcloud.com/developers.html'>http://newsocialcloud.com/developers.html</a></p>
+
+**Authentication:**
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+**Success Response:**
+
+{
+> <p>"vat_number": "xxxxxxxxxxxxxxxxx",</p>
+> <p>"billing_email": "billing@mysite.com,james@mysite.com",</p>
+> <p>"billing_user_fullname": "John Smith",</p>
+> <p>"billing_user_login": "jsmith01",</p>
+> "receipts": [
+> > {
+> > > <p>"tax": 0,</p>
+> > > <p>"city": "Henderson",</p>
+> > > <p>"zip": "89044",</p>
+> > > <p>"extraInfo": null,</p>
+> > > <p>"created_at": "2013/04/16 16:15:46 +0000",</p>
+> > > <p>"trial": null,</p>
+> > > <p>"card_type": "Visa",</p>
+> > > <p>"card_number": null,</p>
+> > > <p>"amount": 30,</p>
+> > > <p>"street": "2777 Craigmillar st",</p>
+> > > <p>"lastname": "Romano",</p>
+> > > <p>"id": 131974,</p>
+> > > <p>"countrycode": "GB",</p>
+> > > <p>"card_year": "2015",</p>
+> > > <p>"user_id": 5131,</p>
+> > > <p>"firstname": "Rick",</p>
+> > > <p>"description": "Rebranding - NewSocialCloud Team",</p>
+> > > <p>"currency": "USD",</p>
+> > > <p>"card_month": "5",</p>
+> > > <p>"status": "Paid",</p>
+> > > <p>"state": "NV",</p>
+> > > <p>"error": null</p>
+
+> > },
+> > {
+> > > <p>"tax": 0,</p>
+> > > <p>"city": "Henderson",</p>
+> > > <p>"zip": "89044",</p>
+> > > <p>"extraInfo": null,</p>
+> > > <p>"created_at": "2013/04/16 16:09:20 +0000",</p>
+> > > <p>"trial": null,</p>
+> > > <p>"card_type": "Visa",</p>
+> > > <p>"card_number": null,</p>
+> > > <p>"amount": 30,</p>
+> > > <p>"street": "2777 Craigmillar st",</p>
+> > > <p>"lastname": "Romano",</p>
+> > > <p>"id": 131973,</p>
+> > > <p>"countrycode": "US",</p>
+> > > <p>"card_year": "2015",</p>
+> > > <p>"user_id": 5131,</p>
+> > > <p>"firstname": "Rick",</p>
+> > > <p>"description": "Rebranding - NewSocialCloud Team",</p>
+> > > <p>"currency": "USD",</p>
+> > > <p>"card_month": "5",</p>
+> > > <p>"status": "Paid",</p>
+> > > <p>"state": "NV",</p>
+> > > <p>"error": null</p>
+
+> > }
+
+> ]
+}

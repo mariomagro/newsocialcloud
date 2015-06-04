@@ -1,0 +1,62 @@
+To create a new event subscription for your application, make a POST request.
+
+**URL:**
+
+http://login.newsocialcloud.com/api/v2/developer_subscription.json
+
+**HTTP Methods:**
+
+POST
+
+**Parameters:**
+
+<p>application_id: Your application id from <a href='http://newsocialcloud.com/developers.html'>http://newsocialcloud.com/developers.html</a></p>
+<p>object_name: Required. Valid values are Contact, SMSIn.</p>
+<p>event_name: Required. Valid values are Create, Update, Delete.</p>
+<p>verification_code: Required. This parameter and value will be passed to your callback URL for verification.</p>
+<p>callback_url: Required. This is the URL that NewSocialCloud will POST to when the event fires.</p>
+
+**Authentication:**
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+**Success Response:**
+
+{
+> <p>"object_name": "Contact",</p>
+> <p>"callback_url": "<a href='http://myurl.com'>http://myurl.com</a>",</p>
+> <p>"subscribers": <a href='.md'>.md</a>,</p>
+> <p>"id": 1,</p>
+> <p>"event_name": "Create",</p>
+> <p>"verification_code": "test123"</p>
+}
+
+**Error Response:**
+
+
+
+&lt;error&gt;
+
+
+
+
+&lt;type&gt;
+
+InvalidUsernamePassword
+
+&lt;/type&gt;
+
+
+
+
+&lt;message&gt;
+
+Username/password is invalid.
+
+&lt;/message&gt;
+
+
+
+
+&lt;/error&gt;
+

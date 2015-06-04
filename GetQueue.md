@@ -1,0 +1,45 @@
+To retrieve a given NewSocialCloud SmartQueue, make a GET call using basic authentication.
+
+**URL:**
+
+http://login.newsocialcloud.com/api/v2/queue.json
+
+**HTTP Methods:**
+
+GET
+
+**Parameters:**
+
+<p>application_id: Your application id from <a href='http://newsocialcloud.com/developers.html'>http://newsocialcloud.com/developers.html</a></p>
+<p>queue_id: The id belonging to the SmartQueue.</p>
+
+**Authentication:**
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+**Success Response:**
+
+{
+> "queue\_times": [
+> > {
+> > > <p>"minute": 0,</p>
+> > > <p>"hour": 12,</p>
+> > > <p>"id": 284406,</p>
+> > > <p>"weekday": 0</p>
+
+> > },
+> > {
+> > > <p>"minute": 0,</p>
+> > > <p>"hour": 12,</p>
+> > > <p>"id": 284407,</p>
+> > > <p>"weekday": 2</p>
+
+> > }
+
+> ],
+> <p>"can_repeat": 0,</p>
+> <p>"queue_name": "ignore",</p>
+> <p>"id": 9004,</p>
+> <p>"user_id": 5131,</p>
+> <p>"auto_detect": 0</p>
+> }

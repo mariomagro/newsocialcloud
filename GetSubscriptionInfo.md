@@ -1,0 +1,104 @@
+To retrieve statistics for a user or multi-user subscription, make a GET request.
+
+**URL:**
+
+http://login.newsocialcloud.com/api/v2/subscription_info.json
+
+**HTTP Methods:**
+
+GET
+
+**Parameters:**
+
+<p>application_id: Your application id from <a href='http://newsocialcloud.com/developers.html'>http://newsocialcloud.com/developers.html</a></p>
+<p>details: Optional. The details to return. Valid values are all, user_stats.</p>
+
+**Authentication:**
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+**Success Response:**
+
+{
+> "apps": {
+> > <p>"in_use": 19,</p>
+> > <p>"total_available": 180</p>
+
+> },
+> "billing": {
+> > "plan": {
+> > > <p>"name": "Premium",</p>
+> > > <p>"is_trial": false,</p>
+> > > <p>"monthly_amount": 699.99,</p>
+> > > <p>"trial_days_remaining": 0</p>
+
+> > },
+> > <p>"users_purchased": 18,</p>
+> > "discount": {
+> > > <p>"annually": 0.1,</p>
+> > > <p>"quarterly": 0.05,</p>
+> > > <p>"monthly": 0,</p>
+> > > <p>"half_yearly": 0.075</p>
+
+> > },
+> > <p>"amount": 3599.88,</p>
+> > <p>"card_expiry_year": 2015,</p>
+> > <p>"card_number": "1234",</p>
+> > <p>"card_expiry_month": 5,</p>
+> > "billing\_urls": {
+> > > <p>"add_users": "**",</p>
+> > >**<p>"select_plan": "**",</p>
+> > >**<p>"change_plan": "**",</p>
+> > >**<p>"change_card": "**"</p>
+
+> > },
+> >**<p>"amount_monthly": 299.99,</p>
+> > <p>"currency": "EUR",</p>
+> > <p>"cycle": 12,</p>
+> > <p>"next_payment": "2015/12/29 01:45:48 +0000",</p>
+> > <p>"last_payment": "2013/12/29 01:45:48 +0000",</p>
+> > <p>"member_since": "2008/08/07 19:39:06 +0000"</p>
+
+> },
+> "services": {
+> > <p>"in_use": 335,</p>
+> > <p>"total_available": 630000</p>
+
+> },
+> "users": {
+> > <p>"inactive": 2,</p>
+> > <p>"total_available": 18,</p>
+> > <p>"active": 17</p>
+
+> }
+}
+
+**Error Response:**
+
+
+
+&lt;error&gt;
+
+
+
+
+&lt;type&gt;
+
+InvalidUsernamePassword
+
+&lt;/type&gt;
+
+
+
+
+&lt;message&gt;
+
+Username/password is invalid.
+
+&lt;/message&gt;
+
+
+
+
+&lt;/error&gt;
+

@@ -1,0 +1,27 @@
+To update a user's timezone, make an authenticated PUT request.
+
+**URL:**
+
+http://login.newsocialcloud.com/api/v2/timezone.json
+
+**HTTP Methods:**
+
+PUT
+
+**Authentication:**
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+**Parameters:**
+
+<p>application_id: Your application id from <a href='http://newsocialcloud.com/developers.html'>http://newsocialcloud.com/developers.html</a></p>
+<p>timezone_name: The name of the timezone.</p>
+<p>timezone: The timezoneOffsetClient value from the browser.</p>
+<p>update_messages: Optional. Set this to 1 to apply the timezone update to messages too. (Default is 0).</p>
+<p>autotimezone: Optional. Set this to 0 if the user should not be prompted to change their timezone again. (Default is 1)</p>
+
+**Success Response:**
+
+{
+"status": "OK"
+}

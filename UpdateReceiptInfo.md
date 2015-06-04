@@ -1,0 +1,25 @@
+To update receipt details such as VAT number and billing email addresses for an account, make a PUT request.
+
+**URL:**
+
+http://login.newsocialcloud.com/api/v2/receipts.json
+
+**HTTP Methods:**
+
+PUT
+
+**Parameters:**
+
+<p>application_id: Your application id from <a href='http://newsocialcloud.com/developers.html'>http://newsocialcloud.com/developers.html</a></p>
+<p>vat_number: The VAT number provided by the user.</p>
+<p>billing_email: A comma separated list of email addresses.</p>
+
+**Authentication:**
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+**Success Response:**
+
+{
+> "status": "OK"
+}

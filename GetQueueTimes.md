@@ -1,0 +1,215 @@
+To retrieve the list of all Queue Times for a given NewSocialCloud SmartQueue, make a GET call using basic authentication.
+
+**URL:**
+
+http://login.newsocialcloud.com/api/v2/queue_times.json
+
+**HTTP Methods:**
+
+GET
+
+**Parameters:**
+
+<p>application_id: Your application id from <a href='http://newsocialcloud.com/developers.html'>http://newsocialcloud.com/developers.html</a></p>
+<p>queue_id: The id belonging to the SmartQueue.</p>
+
+**Authentication:**
+
+Basic authentication with username and password or remote API key belonging to the NewSocialCloud user.
+
+**Success Response:**
+
+[
+> {
+> > <p>"minute": 15,</p>
+> > <p>"hour": 9,</p>
+> > <p>"id": 2976,</p>
+> > <p>"queue_id": 11,</p>
+> > <p>"weekday": 0</p>
+
+> },
+> {
+> > <p>"minute": 8,</p>
+> > <p>"hour": 12,</p>
+> > <p>"id": 2977,</p>
+> > <p>"queue_id": 11,</p>
+> > <p>"weekday": 0</p>
+
+> },
+> {
+> > <p>"minute": 15,</p>
+> > <p>"hour": 17,</p>
+> > <p>"id": 2978,</p>
+> > <p>"queue_id": 11,</p>
+> > <p>"weekday": 0</p>
+
+> },
+> {
+> > <p>"minute": 29,</p>
+> > <p>"hour": 15,</p>
+> > <p>"id": 2979,</p>
+> > <p>"queue_id": 11,</p>
+> > <p>"weekday": 0</p>
+
+> },
+> {
+> > <p>"minute": 21,</p>
+> > <p>"hour": 16,</p>
+> > <p>"id": 2980,</p>
+> > <p>"queue_id": 11,</p>
+> > <p>"weekday": 0</p>
+
+> },
+> {
+> > <p>"minute": 11,</p>
+> > <p>"hour": 18,</p>
+> > <p>"id": 2981,</p>
+> > <p>"queue_id": 11,</p>
+> > <p>"weekday": 0</p>
+
+> },
+> {
+> > <p>"minute": 15,</p>
+> > <p>"hour": 9,</p>
+> > <p>"id": 2982,</p>
+> > <p>"queue_id": 11,</p>
+> > <p>"weekday": 1</p>
+
+> },
+> {
+> > <p>"minute": 15,</p>
+> > <p>"hour": 13,</p>
+> > <p>"id": 2983,</p>
+> > <p>"queue_id": 11,</p>
+> > <p>"weekday": 1</p>
+
+> },
+> {
+> > <p>"minute": 15,</p>
+> > <p>"hour": 17,</p>
+> > <p>"id": 2984,</p>
+> > <p>"queue_id": 11,</p>
+> > <p>"weekday": 1</p>
+
+> },
+> {
+> > <p>"minute": 15,</p>
+> > <p>"hour": 9,</p>
+> > <p>"id": 2985,</p>
+> > <p>"queue_id": 11,</p>
+> > <p>"weekday": 2</p>
+
+> },
+> {
+> > <p>"minute": 15,</p>
+> > <p>"hour": 13,</p>
+> > <p>"id": 2986,</p>
+> > <p>"queue_id": 11,</p>
+> > <p>"weekday": 2</p>
+
+> },
+> {
+> > <p>"minute": 15,</p>
+> > <p>"hour": 17,</p>
+> > <p>"id": 2987,</p>
+> > <p>"queue_id": 11,</p>
+> > <p>"weekday": 2</p>
+
+> },
+> {
+> > <p>"minute": 15,</p>
+> > <p>"hour": 9,</p>
+> > <p>"id": 2988,</p>
+> > <p>"queue_id": 11,</p>
+> > <p>"weekday": 3</p>
+
+> },
+> {
+> > <p>"minute": 15,</p>
+> > <p>"hour": 13,</p>
+> > <p>"id": 2989,</p>
+> > <p>"queue_id": 11,</p>
+> > <p>"weekday": 3</p>
+
+> },
+> {
+> > <p>"minute": 15,</p>
+> > <p>"hour": 17,</p>
+> > <p>"id": 2990,</p>
+> > <p>"queue_id": 11,</p>
+> > <p>"weekday": 3</p>
+
+> },
+> {
+> > <p>"minute": 15,</p>
+> > <p>"hour": 9,</p>
+> > <p>"id": 2991,</p>
+> > <p>"queue_id": 11,</p>
+> > <p>"weekday": 4</p>
+
+> },
+> {
+> > <p>"minute": 15,</p>
+> > <p>"hour": 13,</p>
+> > <p>"id": 2992,</p>
+> > <p>"queue_id": 11,</p>
+> > <p>"weekday": 4</p>
+
+> },
+> {
+> > <p>"minute": 15,</p>
+> > <p>"hour": 17,</p>
+> > <p>"id": 2993,</p>
+> > <p>"queue_id": 11,</p>
+> > <p>"weekday": 4</p>
+
+> },
+> {
+> > <p>"minute": 15,</p>
+> > <p>"hour": 9,</p>
+> > <p>"id": 2994,</p>
+> > <p>"queue_id": 11,</p>
+> > <p>"weekday": 5</p>
+
+> },
+> {
+> > <p>"minute": 15,</p>
+> > <p>"hour": 13,</p>
+> > <p>"id": 2995,</p>
+> > <p>"queue_id": 11,</p>
+> > <p>"weekday": 5</p>
+
+> },
+> {
+> > <p>"minute": 15,</p>
+> > <p>"hour": 17,</p>
+> > <p>"id": 2996,</p>
+> > <p>"queue_id": 11,</p>
+> > <p>"weekday": 5</p>
+
+> },
+> {
+> > <p>"minute": 15,</p>
+> > <p>"hour": 9,</p>
+> > <p>"id": 2997,</p>
+> > <p>"queue_id": 11,</p>
+> > <p>"weekday": 6</p>
+
+> },
+> {
+> > <p>"minute": 15,</p>
+> > <p>"hour": 13,</p>
+> > <p>"id": 2998,</p>
+> > <p>"queue_id": 11,</p>
+> > <p>"weekday": 6</p>
+
+> },
+> {
+> > <p>"minute": 15,</p>
+> > <p>"hour": 17,</p>
+> > <p>"id": 2999,</p>
+> > <p>"queue_id": 11,</p>
+> > <p>"weekday": 6</p>
+
+> }
+]
